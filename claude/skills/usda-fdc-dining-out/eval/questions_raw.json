@@ -1,0 +1,1943 @@
+{
+  "skill_name": "usda-fdc-dining-out",
+  "generated_at": "2026-04-18T00:00:00Z",
+  "questions": [
+    {
+      "id": 0,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie burger at McDonald's?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 1,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Panera sandwich has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 2,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein chicken item at Chick-fil-A?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 3,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie drink at Starbucks?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 4,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Subway sandwich has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 5,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein bowl at Chipotle?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 6,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie taco at Taco Bell?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 7,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which salad at Wendy's has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 8,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "What is the lowest-sodium breakfast item at Dunkin?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 9,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which KFC side dish has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 10,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein sandwich at Burger King?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 11,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Popeyes item has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 12,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie pizza slice at Domino's?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 13,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Pizza Hut pizza has the fewest calories per slice?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 14,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein breakfast item at McDonald's?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 15,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Starbucks food item has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 16,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie chicken sandwich at Chick-fil-A?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 17,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Chipotle bowl has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 18,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie breakfast sandwich at Panera?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 19,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "Which Taco Bell item has the most protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 20,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie salad at Wendys?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 21,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Subway footlong has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 22,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-fat burger at BK?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 23,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which KFC chicken piece has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 24,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein item at Popeyes?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 25,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Domino's pasta has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 26,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie donut at Dunkin' Donuts?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 27,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which McDonald's breakfast sandwich has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 28,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein salad at Panera?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 29,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Chick-fil-A side dish has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 30,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie item on the T-Bell breakfast menu?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 31,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "Which Starbucks sandwich has the most protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 32,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "What is the lowest-sodium side at Wendy's?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 33,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Chipotle salad has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 34,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the lowest-calorie dessert at DQ?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 35,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "Which Subway 6-inch has the most protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 36,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "What is the least-sodium pizza at Pizza Hut?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 37,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Burger King breakfast item has the fewest calories? (I always just say BK)",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 38,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the highest-protein item at KFC?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 39,
+      "tier": "easy",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Panera soup has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 40,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What at Chipotle has under 700 calories and at least 40g of protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 41,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What Starbucks drink has under 200 calories and at least 10g of protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 42,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the best Wendy's option under 500 calories with at least 30g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 43,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "I'm on a keto diet at Chipotle \u2014 what menu items fit with under 10g carbs?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 44,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "What McDonald's breakfast item has under 400 calories and at least 20g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 45,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "Which Panera salads have under 600mg sodium and more than 25g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 46,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the best low-carb sandwich at Subway under 300 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 47,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Taco Bell items fit a 1200-calorie daily budget for lunch \u2014 under 400 calories with decent protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 48,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the highest-protein meal at Chick-fil-A under 600 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 49,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Dunkin breakfast sandwich has the most protein under 450 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 50,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What Burger King item has under 1000mg sodium and at least 25g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 51,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "Which Domino's pizza toppings and crust combination keeps a slice under 250 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 52,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "protein_ranked_pick"
+      ],
+      "text": "What KFC meal is under 800mg sodium with the most protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 53,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick",
+        "protein_ranked_pick"
+      ],
+      "text": "Which Popeyes chicken sandwich has the fewest calories while still being at least 30g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 54,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "I have hypertension \u2014 what at Panera keeps sodium under 700mg for a full lunch?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 55,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What is the best post-workout meal at Chipotle maximizing protein while staying under 800 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 56,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What are the macros on the Starbucks holiday Gingerbread Latte? It's seasonal \u2014 does FDC have it?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 57,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "sodium_ranked_pick"
+      ],
+      "text": "What Subway wrap has the most protein under 600mg sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 58,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which McDonald's burger is under 500 calories and has more than 25g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 59,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What is the best Taco Bell vegetarian option under 500 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 60,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Pizza Hut personal pizza has the most protein under 700 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 61,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What Wendy's item is the best high-protein, low-fat option for someone cutting calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 62,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "I'm diabetic \u2014 which Chick-fil-A items have under 30g carbs and are not fried?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 63,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "protein_ranked_pick"
+      ],
+      "text": "What is the lowest-sodium, highest-protein option at KFC for someone with high blood pressure?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 64,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "Which Dunkin donut has the fewest carbs? Also, do they still have the limited-time apple cider donut and is it in FDC?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 65,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the best Five Guys burger option for someone staying under 700 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 66,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Shake Shack burger has the most protein per calorie?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 67,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "sodium_ranked_pick"
+      ],
+      "text": "What Arby's sandwich has the highest protein under 800mg sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 68,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc",
+        "calorie_ranked_pick"
+      ],
+      "text": "Domino's just launched a new loaded tot flavor LTO \u2014 can FDC find it? Also which existing wing flavor has the least calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 69,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "What Starbucks protein box has the most protein under 400 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 70,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "Which Panera flatbread pizza has the least sodium?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 71,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is the best Popeyes meal for someone on a high-protein diet under 900 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 72,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Jack in the Box item has the highest protein under 600 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 73,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What Taco Bell item fits a keto diet under 10g net carbs?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 74,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Burger King salad or wrap keeps me under 500 calories with at least 20g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 75,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "What Subway sandwich has the best protein-to-calorie ratio?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 76,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which McDonald's McCaf\u00e9 drink has the fewest calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 77,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "protein_ranked_pick"
+      ],
+      "text": "What Chipotle burrito bowl can I build to stay under 600 calories with at least 35g protein?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 78,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "Which Chick-fil-A sauce has the fewest calories to keep my meal low-calorie?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 79,
+      "tier": "moderate",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "sodium_ranked_pick"
+      ],
+      "text": "What is the best high-protein low-sodium lunch at Wendy's for someone watching their heart health?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 80,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "What is the nutrition info for the McRib at McDonald's? I know it's seasonal.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 81,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "I'm at McDs \u2014 what's the healthiest thing I can get for under 300 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 82,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick",
+        "macro_constraint_at_menu"
+      ],
+      "text": "Does Starbs have anything under 100 calories that's actually filling?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 83,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What's the healthiest option at In-N-Out for someone on a low-carb diet?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 84,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "protein_ranked_pick",
+        "calorie_ranked_pick"
+      ],
+      "text": "I'm at Whataburger \u2014 what has the most protein and is under 700 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 85,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick"
+      ],
+      "text": "What should I get at Culver's if I'm trying to stay under 600 calories?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 86,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "What are the nutrition facts for Taco Bell's Nacho Fries? They're back for a limited time.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 87,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "I don't really know what I want at Chipotle \u2014 just something healthy and filling. What do you recommend?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 88,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu"
+      ],
+      "text": "What does a McDonald's Happy Meal with apple slices look like nutritionally for my 6-year-old?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 89,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "Can I get the calorie info for the Starbucks Pumpkin Spice Latte? It's only available in fall.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 90,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "What is Mickey D's lowest-calorie dessert?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 91,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_name_resolution",
+        "calorie_ranked_pick"
+      ],
+      "text": "I'm at BK and I want something under 400 calories \u2014 what should I get?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 92,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "What are the calories in Panera's seasonal autumn squash soup?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 93,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick"
+      ],
+      "text": "I want a kids' meal at Chick-fil-A \u2014 which one has the least sodium for my toddler?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 94,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "Does Wingstop have any options on FoodData Central? I'm trying to find their nutrition info.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 95,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "calorie_ranked_pick",
+        "sodium_ranked_pick"
+      ],
+      "text": "I have no idea what I want at Taco Bell \u2014 what's something low-calorie and low-sodium that actually tastes good?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 96,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "What's the nutrition breakdown for the Popeyes Blackened Chicken Sandwich? I think it might be a regional item.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 97,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "calorie_ranked_pick"
+      ],
+      "text": "I'm at Subway and I want something filling but I don't know what \u2014 just make it under 500 calories with at least 25g protein.",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 98,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "macro_constraint_at_menu",
+        "sodium_ranked_pick"
+      ],
+      "text": "What's a good kids' meal at McDonald's that keeps fat under 15g and sodium under 600mg?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    },
+    {
+      "id": 99,
+      "tier": "edge",
+      "ability_tags": [
+        "brand_keyword_match",
+        "sodium_ranked_pick",
+        "menu_item_not_in_fdc"
+      ],
+      "text": "I'm visiting a Whataburger in Texas \u2014 does FoodData Central have their full menu? What's lowest-sodium on there?",
+      "expected_endpoints": [
+        "POST /foods/search",
+        "GET /food/{fdcId}"
+      ],
+      "expected_fields": [
+        "description",
+        "brandOwner",
+        "labelNutrients",
+        "foodNutrients"
+      ]
+    }
+  ]
+}

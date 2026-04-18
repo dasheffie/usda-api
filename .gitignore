@@ -1,0 +1,32 @@
+# User prompt / briefing document — contains the raw USDA FDC API key.
+# Kept locally for reference but not tracked.
+docs/
+
+# Secret material — anything with an actual credential value.
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Phase 3.5 worktrees (created during refinement loop — NEVER commit these)
+.worktrees/
+
+# Phase 4+ generated artifacts that are large / noisy (keep trajectory.jsonl; drop big binaries)
+*.log

@@ -1,0 +1,2234 @@
+{
+  "total": 100,
+  "questions": [
+    {
+      "id": 0,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Halo Top Vanilla Bean",
+        "Ben & Jerry's Vanilla Ice Cream"
+      ],
+      "tier": "easy",
+      "text": "Halo Top Vanilla Bean ice cream vs Ben & Jerry's Vanilla \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 1,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Chobani Plain Greek Yogurt",
+        "Yoplait Original Strawberry Yogurt"
+      ],
+      "tier": "easy",
+      "text": "Chobani Plain Greek Yogurt vs Yoplait Original Strawberry \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 2,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Quaker Instant Oatmeal",
+        "Cheerios"
+      ],
+      "tier": "easy",
+      "text": "Quaker Instant Oatmeal vs Cheerios \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 3,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Kind Dark Chocolate Nuts & Sea Salt Bar",
+        "Clif Bar Chocolate Chip"
+      ],
+      "tier": "easy",
+      "text": "Kind Dark Chocolate Nuts & Sea Salt bar vs Clif Bar Chocolate Chip \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 4,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Oikos Triple Zero Vanilla",
+        "Activia Vanilla Yogurt"
+      ],
+      "tier": "easy",
+      "text": "Oikos Triple Zero Vanilla vs Activia Vanilla \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 5,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Almond Breeze Unsweetened Almond Milk",
+        "Oatly Oat Milk"
+      ],
+      "tier": "easy",
+      "text": "Almond Breeze Unsweetened Almond Milk vs Oatly Oat Milk \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 6,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "RXBAR Chocolate Sea Salt",
+        "Quest Chocolate Chip Cookie Dough Bar"
+      ],
+      "tier": "easy",
+      "text": "RXBAR Chocolate Sea Salt vs Quest Chocolate Chip Cookie Dough bar \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 7,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Planters Dry Roasted Peanuts",
+        "Lay's Classic Potato Chips"
+      ],
+      "tier": "easy",
+      "text": "Planters Dry Roasted Peanuts vs Lay's Classic Potato Chips \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 8,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Amy's Lentil Soup",
+        "Campbell's Chicken Noodle Soup"
+      ],
+      "tier": "easy",
+      "text": "Amy's Lentil Soup vs Campbell's Chicken Noodle Soup \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 9,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Silk Unsweetened Soy Milk",
+        "Fairlife 2% Milk"
+      ],
+      "tier": "easy",
+      "text": "Silk Unsweetened Soy Milk vs Fairlife 2% Milk \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 10,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Special K Original Cereal",
+        "Frosted Mini-Wheats Cereal"
+      ],
+      "tier": "easy",
+      "text": "Special K Original vs Frosted Mini-Wheats \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 11,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Jif Creamy Peanut Butter",
+        "Justin's Classic Almond Butter"
+      ],
+      "tier": "easy",
+      "text": "Jif Creamy Peanut Butter vs Justin's Classic Almond Butter \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 12,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Annie's Cheddar Bunnies",
+        "Goldfish Cheddar Crackers"
+      ],
+      "tier": "easy",
+      "text": "Annie's Cheddar Bunnies vs Goldfish Cheddar Crackers \u2014 which is better for kids?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 13,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Muscle Milk Genuine Chocolate Shake",
+        "Premier Protein Chocolate Shake"
+      ],
+      "tier": "easy",
+      "text": "Muscle Milk Genuine Chocolate Shake vs Premier Protein Chocolate Shake \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 14,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Lean Cuisine Chicken Alfredo",
+        "Healthy Choice Chicken Fettuccini Alfredo"
+      ],
+      "tier": "easy",
+      "text": "Lean Cuisine Chicken Alfredo vs Healthy Choice Chicken Fettuccini Alfredo \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 15,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Coca-Cola Classic",
+        "Diet Coke"
+      ],
+      "tier": "easy",
+      "text": "Coca-Cola Classic vs Diet Coke \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 16,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Kashi Go Lean Crunch",
+        "Nature Valley Crunchy Granola Oats n Honey"
+      ],
+      "tier": "easy",
+      "text": "Kashi Go Lean Crunch vs Nature Valley Crunchy Granola Oats 'n Honey \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 17,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Skippy Natural Peanut Butter",
+        "Teddie All Natural Peanut Butter"
+      ],
+      "tier": "easy",
+      "text": "Skippy Natural Peanut Butter vs Teddie All Natural Peanut Butter \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 18,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Triscuit Original Crackers",
+        "Wheat Thins Original Crackers"
+      ],
+      "tier": "easy",
+      "text": "Triscuit Original vs Wheat Thins Original \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 19,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Dannon Light & Fit Greek Strawberry Yogurt",
+        "Stonyfield Organic Plain Fat Free Yogurt"
+      ],
+      "tier": "easy",
+      "text": "Dannon Light & Fit Greek Strawberry vs Stonyfield Organic Plain Fat Free Yogurt \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 20,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Wonderful Pistachios Roasted and Salted",
+        "Blue Diamond Almonds Sea Salt"
+      ],
+      "tier": "easy",
+      "text": "Wonderful Pistachios Roasted & Salted vs Blue Diamond Almonds Sea Salt \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 21,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Larabar Apple Pie Bar",
+        "KIND Peanut Butter Dark Chocolate Bar"
+      ],
+      "tier": "easy",
+      "text": "Larabar Apple Pie vs KIND Peanut Butter Dark Chocolate bar \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 22,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Siggi's 4% Plain Icelandic Yogurt",
+        "Fage Total 5% Greek Yogurt"
+      ],
+      "tier": "easy",
+      "text": "Siggi's 4% Plain Icelandic Yogurt vs Fage Total 5% Greek Yogurt \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 23,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Ore-Ida Golden Steak Fries",
+        "Alexia Yukon Gold Fries"
+      ],
+      "tier": "easy",
+      "text": "Ore-Ida Golden Steak Fries vs Alexia Yukon Gold Fries \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 24,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Keebler Club Crackers",
+        "Mary's Gone Crackers Original"
+      ],
+      "tier": "easy",
+      "text": "Keebler Club Crackers vs Mary's Gone Crackers Original \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 25,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Nature's Own Honey Wheat Bread",
+        "Dave's Killer Bread 21 Whole Grains and Seeds"
+      ],
+      "tier": "easy",
+      "text": "Nature's Own Honey Wheat Bread vs Dave's Killer Bread 21 Whole Grains \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 26,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Kirkland Signature Protein Bar Chocolate Brownie",
+        "RXBAR Vanilla Almond"
+      ],
+      "tier": "easy",
+      "text": "Kirkland Signature Protein Bar Chocolate Brownie vs RXBAR Vanilla Almond \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 27,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Bai Cocofusion Molokai Coconut",
+        "Snapple Lemon Tea"
+      ],
+      "tier": "easy",
+      "text": "Bai Cocofusion Molokai Coconut vs Snapple Lemon Tea \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 28,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Quaker Chewy Chocolate Chip Granola Bar",
+        "Nature Valley Oats and Honey Granola Bar"
+      ],
+      "tier": "easy",
+      "text": "Quaker Chewy Chocolate Chip Granola Bar vs Nature Valley Oats & Honey Bar \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 29,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Bolthouse Farms Green Goodness Juice",
+        "Naked Green Machine Juice"
+      ],
+      "tier": "easy",
+      "text": "Bolthouse Farms Green Goodness vs Naked Green Machine \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 30,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Tostitos Lightly Salted Tortilla Chips",
+        "SkinnyPop Original Popcorn"
+      ],
+      "tier": "easy",
+      "text": "Tostitos Lightly Salted Tortilla Chips vs SkinnyPop Original Popcorn \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 31,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Fiber One Original Bran Cereal",
+        "Kellogg's All-Bran Original Cereal"
+      ],
+      "tier": "easy",
+      "text": "Fiber One Original Bran Cereal vs All-Bran Original \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 32,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Activia Probiotic Dailies Strawberry",
+        "Noosa Finest Yoghurt Strawberry Rhubarb"
+      ],
+      "tier": "easy",
+      "text": "Activia Probiotic Dailies Strawberry vs Noosa Finest Yoghurt Strawberry Rhubarb \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 33,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Kettle Brand Sea Salt Potato Chips",
+        "Pringles Original"
+      ],
+      "tier": "easy",
+      "text": "Kettle Brand Sea Salt Potato Chips vs Pringles Original \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 34,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Silk Vanilla Almond Milk",
+        "Ripple Original Pea Milk"
+      ],
+      "tier": "easy",
+      "text": "Silk Vanilla Almond Milk vs Ripple Original Pea Milk \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 35,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Evol Chicken Burrito Bowl",
+        "Amy's Bean and Rice Burrito"
+      ],
+      "tier": "easy",
+      "text": "Evol Chicken Burrito Bowl vs Amy's Bean & Rice Burrito \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 36,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Clif Builder's Max Chocolate Bar",
+        "MET-Rx Big 100 Meal Replacement Bar"
+      ],
+      "tier": "easy",
+      "text": "Clif Builder's Max Chocolate vs MET-Rx Big 100 Meal Replacement Bar \u2014 which is better for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 37,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Sargento Reduced Fat Cheddar Cheese",
+        "Kraft Singles American Cheese"
+      ],
+      "tier": "easy",
+      "text": "Sargento Reduced Fat Cheddar vs Kraft Singles American \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 38,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Thomas' Whole Wheat English Muffin",
+        "Wonder Classic White Bread"
+      ],
+      "tier": "easy",
+      "text": "Thomas' Whole Wheat English Muffin vs Wonder Classic White Bread \u2014 which is better for blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 39,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "PopCorners Flex White Cheddar",
+        "Pirate's Booty Aged White Cheddar"
+      ],
+      "tier": "easy",
+      "text": "PopCorners Flex White Cheddar vs Pirate's Booty Aged White Cheddar \u2014 which is better for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 40,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Chobani Plain Greek Yogurt",
+        "Fage Total 0% Greek Yogurt",
+        "Siggi's Plain Skyr"
+      ],
+      "tier": "moderate",
+      "text": "Chobani Plain Greek Yogurt vs Fage Total 0% vs Siggi's Plain Skyr \u2014 which is best for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 41,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Quest Chocolate Chip Cookie Dough Bar",
+        "One Bar Birthday Cake",
+        "Barebells Cookies and Cream Bar"
+      ],
+      "tier": "moderate",
+      "text": "Quest Chocolate Chip Cookie Dough bar vs One Bar Birthday Cake vs Barebells Cookies & Cream \u2014 which is best for muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 42,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Halo Top Chocolate Ice Cream",
+        "Enlightened Chocolate Peanut Butter Ice Cream",
+        "So Delicious Coconut Milk Vanilla Bean Ice Cream"
+      ],
+      "tier": "moderate",
+      "text": "Halo Top Chocolate vs Enlightened Chocolate Peanut Butter vs So Delicious Coconut Milk Vanilla Bean \u2014 which is best for weight loss and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 43,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Cheerios",
+        "Wheaties",
+        "Special K Red Berries Cereal"
+      ],
+      "tier": "moderate",
+      "text": "Cheerios vs Wheaties vs Special K Red Berries \u2014 which is best for heart health, and can you suggest a stronger third option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 44,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Almond Breeze Unsweetened Almond Milk",
+        "Silk Oat Yeah Oat Milk",
+        "Ripple Original Pea Milk"
+      ],
+      "tier": "moderate",
+      "text": "Almond Breeze Unsweetened vs Silk Oat Yeah Oat Milk vs Ripple Original Pea Milk \u2014 which is best for CKD patients who need to limit potassium and phosphorus?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 45,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Justin's Classic Almond Butter",
+        "Barney Butter Smooth Almond Butter",
+        "Artisana Raw Almond Butter"
+      ],
+      "tier": "moderate",
+      "text": "Justin's Classic Almond Butter vs Barney Butter Smooth Almond Butter vs Artisana Raw Almond Butter \u2014 which is best for blood-sugar control, and what's a stronger third option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 46,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Kashi GO Peanut Butter Crunch Cereal",
+        "Nature's Path Flax Plus Cereal",
+        "Bob's Red Mill Muesli"
+      ],
+      "tier": "moderate",
+      "text": "Kashi GO Peanut Butter Crunch vs Nature's Path Flax Plus vs Bob's Red Mill Muesli \u2014 which is best for blood-sugar control and weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 47,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Amy's Vegetarian Chili",
+        "Progresso Light Chicken Noodle Soup",
+        "Campbell's Well Yes! Black Bean & Vegetable Soup"
+      ],
+      "tier": "moderate",
+      "text": "Amy's Vegetarian Chili vs Progresso Light Chicken Noodle vs Campbell's Well Yes! Black Bean & Vegetable \u2014 which is best for weight loss and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 48,
+      "ability_tags": [
+        "tie_breaker_ingredient_cleanliness",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "RXBAR Chocolate Sea Salt",
+        "Larabar Peanut Butter Cookie Bar",
+        "RXKIDs Berry Blast Bar"
+      ],
+      "tier": "moderate",
+      "text": "RXBAR Chocolate Sea Salt vs Larabar Peanut Butter Cookie vs RXKIDs Berry Blast \u2014 which is most kid-friendly with the cleanest ingredients?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 49,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Premier Protein Vanilla Shake",
+        "Orgain Organic Protein Vanilla Bean Shake",
+        "Vega Sport Premium Protein Vanilla Shake"
+      ],
+      "tier": "moderate",
+      "text": "Premier Protein Vanilla Shake vs Orgain Organic Protein Vanilla Bean vs Vega Sport Premium Vanilla \u2014 which is best for muscle gain post-workout?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 50,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Triscuit Original Crackers",
+        "Mary's Gone Crackers Original",
+        "Simple Mills Almond Flour Crackers"
+      ],
+      "tier": "moderate",
+      "text": "Triscuit Original vs Mary's Gone Crackers Original vs Simple Mills Almond Flour Crackers \u2014 which is best for heart health and can you suggest a stronger option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 51,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Kettle Brand Honey Dijon Potato Chips",
+        "Popchips Sea Salt",
+        "Boom Chicka Pop Sea Salt Popcorn"
+      ],
+      "tier": "moderate",
+      "text": "Kettle Brand Honey Dijon Chips vs Popchips Sea Salt vs Boom Chicka Pop Sea Salt Popcorn \u2014 which is best for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 52,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Sargento Balanced Breaks",
+        "Babybel Original Cheese",
+        "Laughing Cow Light Swiss Cheese"
+      ],
+      "tier": "moderate",
+      "text": "Sargento Balanced Breaks vs Babybel Original vs Laughing Cow Light Swiss \u2014 which is best for blood-sugar control as a snack?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 53,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Nutella",
+        "Justin's Chocolate Hazelnut Butter",
+        "Once Again Almond Butter"
+      ],
+      "tier": "moderate",
+      "text": "Nutella vs Justin's Chocolate Hazelnut Butter vs Once Again Almond Butter \u2014 which is better for blood-sugar control, and what's a stronger third option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 54,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "heart_health_sat_fat_sodium_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Quaker Old Fashioned Oats",
+        "Bob's Red Mill Steel Cut Oats",
+        "Kodiak Cakes Oat & Honey Flapjack Mix"
+      ],
+      "tier": "moderate",
+      "text": "Quaker Old Fashioned Oats vs Bob's Red Mill Steel Cut Oats vs Kodiak Cakes Oat & Honey Flapjack Mix \u2014 which is best for blood-sugar control and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 55,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Trader Joe's High Fiber Cereal",
+        "Fiber One 80 Calorie Honey Squares Cereal",
+        "Kellogg's Bran Flakes Cereal"
+      ],
+      "tier": "moderate",
+      "text": "Trader Joe's High Fiber Cereal vs Fiber One 80 Calorie Honey Squares vs Kellogg's Bran Flakes \u2014 which is best for weight loss and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 56,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Purely Elizabeth Grain-Free Granola",
+        "Kind Healthy Grains Vanilla Blueberry Clusters",
+        "Bear Naked Fit Triple Berry Granola"
+      ],
+      "tier": "moderate",
+      "text": "Purely Elizabeth Grain-Free Granola vs Kind Healthy Grains Vanilla Blueberry Clusters vs Bear Naked Fit Triple Berry Granola \u2014 which is best for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 57,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Ozery Bakery One Bun",
+        "Thomas' Everything Bagel Thin",
+        "Pepperidge Farm Whole Grain Deli Flats"
+      ],
+      "tier": "moderate",
+      "text": "Ozery Bakery One Bun vs Thomas' Everything Bagel Thin vs Pepperidge Farm Whole Grain Deli Flats \u2014 which is best for blood-sugar control as a sandwich base?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 58,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Muscle Milk Pro Series 40 Protein Shake",
+        "Dymatize Elite Whey Protein Powder",
+        "GNC Pro Performance 100% Whey Protein Powder"
+      ],
+      "tier": "moderate",
+      "text": "Muscle Milk Pro Series 40 vs Dymatize Elite Whey vs GNC Pro Performance 100% Whey \u2014 which is best for muscle gain after lifting?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 59,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Cabot Sharp Cheddar Cheese",
+        "Tillamook Medium Cheddar Cheese",
+        "Horizon Organic Sharp Cheddar Cheese"
+      ],
+      "tier": "moderate",
+      "text": "Cabot Sharp Cheddar vs Tillamook Medium Cheddar vs Horizon Organic Sharp Cheddar \u2014 which is better for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 60,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Noosa Lemon Yoghurt",
+        "Chobani Mango on the Bottom Yogurt",
+        "Nancy's Probiotic Whole Milk Plain Yogurt"
+      ],
+      "tier": "moderate",
+      "text": "Noosa Lemon Yoghurt vs Chobani Mango on the Bottom vs Nancy's Probiotic Whole Milk Plain \u2014 which is best for weight loss and muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 61,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Stouffer's Mac & Cheese",
+        "Annie's Homegrown Shells & White Cheddar Mac",
+        "Amy's Rice Mac & Cheese"
+      ],
+      "tier": "moderate",
+      "text": "Stouffer's Mac & Cheese vs Annie's Homegrown Shells & White Cheddar vs Amy's Rice Mac & Cheese \u2014 which is best for kids and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 62,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Clif Bar White Chocolate Macadamia Nut Bar",
+        "Clif Bar Crunchy Peanut Butter Bar",
+        "Kind Breakfast Blueberry Almond Bar"
+      ],
+      "tier": "moderate",
+      "text": "Clif Bar White Chocolate Macadamia vs Clif Bar Crunchy Peanut Butter vs Kind Breakfast Blueberry Almond \u2014 which is best for sustained energy and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 63,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Gardein Classic Meatless Meatballs",
+        "Beyond Meat Beyond Burger",
+        "MorningStar Farms Grillers Original Burger"
+      ],
+      "tier": "moderate",
+      "text": "Gardein Classic Meatless Meatballs vs Beyond Meat Beyond Burger vs MorningStar Farms Grillers Original \u2014 which is best for muscle gain and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 64,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Sabra Classic Hummus",
+        "Hope Foods Original Hummus",
+        "Cedar's Classic Original Hummus"
+      ],
+      "tier": "moderate",
+      "text": "Sabra Classic Hummus vs Hope Foods Original Hummus vs Cedar's Classic Original Hummus \u2014 which is best for blood-sugar control and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 65,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Dole Fruit Cups Peaches in 100% Juice",
+        "Del Monte No Sugar Added Mandarin Oranges Cup",
+        "Mott's Unsweetened Applesauce Cup"
+      ],
+      "tier": "moderate",
+      "text": "Dole Fruit Cups Peaches in 100% Juice vs Del Monte No Sugar Added Mandarin Oranges vs Mott's Unsweetened Applesauce \u2014 which is best for a child's blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 66,
+      "ability_tags": [
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "Horizon Organic Whole Milk",
+        "Organic Valley Whole Milk",
+        "Fairlife Whole Ultra-Filtered Milk"
+      ],
+      "tier": "moderate",
+      "text": "Horizon Organic Whole Milk vs Organic Valley Whole Milk vs Fairlife Whole Ultra-Filtered Milk \u2014 which is best for muscle gain in kids?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 67,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Rao's Homemade Marinara Sauce",
+        "Newman's Own Marinara Sauce",
+        "Prego Traditional Pasta Sauce"
+      ],
+      "tier": "moderate",
+      "text": "Rao's Homemade Marinara vs Newman's Own Marinara vs Prego Traditional \u2014 which is best for heart health and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 68,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Quaker Rice Cakes Butter Popcorn",
+        "Lundberg Organic Brown Rice Cakes",
+        "Ryvita Crispbreads Multigrain"
+      ],
+      "tier": "moderate",
+      "text": "Quaker Rice Cakes Butter Popcorn vs Lundberg Organic Brown Rice Cakes vs Ryvita Crispbreads Multigrain \u2014 which is best for weight loss and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 69,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Larabar Cashew Cookie Bar",
+        "GoMacro MacroBar Oatmeal Chocolate Chip Bar",
+        "88 Acres Sunflower Seed Bar"
+      ],
+      "tier": "moderate",
+      "text": "L\u00e4rabar Cashew Cookie vs GoMacro MacroBar Oatmeal Chocolate Chip vs 88 Acres Sunflower Seed Bar \u2014 which is best for blood-sugar control and suggest a stronger third option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 70,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Krave Sweet Chipotle Beef Jerky",
+        "Jack Link's Original Beef Jerky",
+        "Chomps Original Beef Stick"
+      ],
+      "tier": "moderate",
+      "text": "Krave Sweet Chipotle Beef Jerky vs Jack Link's Original Beef Jerky vs Chomps Original Beef Stick \u2014 which is best for muscle gain and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 71,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Wasa Crispbread Sourdough",
+        "Finn Crisp Original Crispbread",
+        "GG Scandinavian Fiber Crispbread"
+      ],
+      "tier": "moderate",
+      "text": "Wasa Crispbread Sourdough vs Finn Crisp Original vs GG Scandinavian Fiber Crispbread \u2014 which is best for weight loss and suggest a stronger alternative?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 72,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Kite Hill Plain Unsweetened Almond Milk Yogurt",
+        "So Delicious Plain Coconut Milk Yogurt",
+        "Forager Project Plain Cashew Milk Yogurt"
+      ],
+      "tier": "moderate",
+      "text": "Kite Hill Plain Unsweetened Almond Milk Yogurt vs So Delicious Coconut Milk Yogurt vs Forager Project Cashew Milk Yogurt \u2014 which is best for blood-sugar control as a dairy-free option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 73,
+      "ability_tags": [
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Progresso Vegetable Soup",
+        "Pacific Foods Organic Tomato Basil Bisque",
+        "Imagine Organic Creamy Broccoli Soup"
+      ],
+      "tier": "moderate",
+      "text": "Progresso Vegetable Soup vs Pacific Foods Organic Tomato Basil Bisque vs Imagine Organic Creamy Broccoli Soup \u2014 which is best for weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 74,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "muscle_gain_protein_lever"
+      ],
+      "candidates": [
+        "liveGfree Gluten Free Penne",
+        "Barilla Whole Grain Penne Pasta",
+        "Banza Chickpea Penne Pasta"
+      ],
+      "tier": "moderate",
+      "text": "Aldi liveGfree Gluten Free Penne vs Barilla Whole Grain Penne vs Banza Chickpea Penne \u2014 which is best for blood-sugar control and muscle gain?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 75,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Sargento Colby Jack String Cheese Stick",
+        "String Thing Mozzarella String Cheese",
+        "Horizon Organic Cheddar String Cheese Stick"
+      ],
+      "tier": "moderate",
+      "text": "Sargento Colby Jack Stick vs String Thing Mozzarella vs Horizon Organic Cheddar Stick \u2014 which is best for kids' muscle gain and heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 76,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "Wholly Guacamole Classic",
+        "Good Foods Chunky Guacamole",
+        "Trader Joe's Avocado's Number Guacamole"
+      ],
+      "tier": "moderate",
+      "text": "Wholly Guacamole Classic vs Good Foods Chunky Guacamole vs Trader Joe's Organic Avocado's Number Guacamole \u2014 which is best for heart health?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 77,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "weight_loss_calorie_lever"
+      ],
+      "candidates": [
+        "Chobani Oat Plain Oat Milk",
+        "Elmhurst 1925 Oat Milk",
+        "Califia Farms Oat Barista Blend"
+      ],
+      "tier": "moderate",
+      "text": "Chobani Oat Plain vs Elmhurst 1925 Oat Milk vs Califia Farms Oat Barista Blend \u2014 which is best for blood-sugar control and weight loss?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 78,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "stronger_third_option"
+      ],
+      "candidates": [
+        "MorningStar Farms Spicy Black Bean Burger",
+        "Dr. Praeger's California Veggie Burger",
+        "Lightlife Plant-Based Burger"
+      ],
+      "tier": "moderate",
+      "text": "Morningstar Farms Spicy Black Bean Burger vs Dr. Praeger's California Veggie Burger vs Lightlife Plant-Based Burger \u2014 which is best for heart health and suggest a stronger third option?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 79,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "blood_sugar_net_carb_lever"
+      ],
+      "candidates": [
+        "Quest Thin Crust Cheese Pizza",
+        "Amy's Single Serve Roasted Vegetable No Cheese Pizza",
+        "Caulipower Cheese Pizza"
+      ],
+      "tier": "moderate",
+      "text": "Quest Thin Crust Cheese Pizza vs Amy's Single Serve Roasted Vegetable No Cheese Pizza vs Caulipower Cheese Pizza \u2014 which is best for weight loss and blood-sugar control?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 80,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "KIND Almond & Coconut Bar",
+        "KIND Almond & Apricot Bar"
+      ],
+      "tier": "edge",
+      "text": "KIND Almond & Coconut bar vs Kind Almond & Apricot \u2014 they look nutritionally identical on the front of pack. Which is actually better for blood-sugar control, and does ingredient cleanliness tip the scales?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 81,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Kashi Heart to Heart Honey Toasted Oat Cereal",
+        "Cheerios"
+      ],
+      "tier": "edge",
+      "text": "Kashi Heart to Heart Honey Toasted Oat cereal vs Cheerios \u2014 both claim heart health. Which actually wins on saturated fat and sodium, and are they too close to call without an ingredient cleanliness check?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 82,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Quaker Steel Cut Oats",
+        "Bob's Red Mill Thick Rolled Oats"
+      ],
+      "tier": "edge",
+      "text": "Quaker Oats Steel Cut (SR Legacy item, per 100 g only) vs Bob's Red Mill Thick Rolled Oats (Branded, label-nutrients per serving) \u2014 which is better for blood-sugar control? Handle the mixed data sources.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 83,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Raw Almonds",
+        "Blue Diamond Lightly Salted Almonds"
+      ],
+      "tier": "edge",
+      "text": "Generic raw almonds (SR Legacy) vs Blue Diamond Lightly Salted Almonds (Branded) \u2014 which is better for heart health? Note the data-source difference in your comparison.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 84,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Quest Chocolate Chip Cookie Dough Bar",
+        "Clif Builder's Max Chocolate Bar"
+      ],
+      "tier": "edge",
+      "text": "Two Quest bars vs one Clif Builder's Max \u2014 the serving sizes differ. Which gives more protein per serving and per 100 calories? Disclose the serving-size basis used.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 85,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Fage Total 0% Greek Yogurt",
+        "Chobani Plain Non-Fat Greek Yogurt"
+      ],
+      "tier": "edge",
+      "text": "Fage Total 0% (170 g container) vs Chobani Plain Non-Fat (150 g container) \u2014 serving sizes differ. Which wins for muscle gain per gram of protein, and per container?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 86,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Halo Top Birthday Cake Ice Cream",
+        "Enlightened Birthday Cake Ice Cream"
+      ],
+      "tier": "edge",
+      "text": "Halo Top Birthday Cake vs Enlightened Birthday Cake \u2014 nearly identical macros. Which wins for weight loss, and if they tie, does ingredient cleanliness decide?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 87,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Siggi's 2% Plain Icelandic Yogurt",
+        "Nancy's Organic Whole Milk Plain Yogurt"
+      ],
+      "tier": "edge",
+      "text": "Siggi's 2% Plain vs Nancy's Organic Whole Milk Plain \u2014 both have similar calorie counts. Which wins for weight loss, and if the gap is under 15 kcal per serving, invoke ingredient cleanliness?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 88,
+      "ability_tags": [
+        "stronger_third_option",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Kirkland Signature Protein Bar",
+        "BarBella Protein Bar"
+      ],
+      "tier": "edge",
+      "text": "I want to compare Costco's Kirkland Signature protein bar vs a boutique bar called 'BarBella Protein Bar' \u2014 I can't find the second one in FDC. Can you still compare using the one you find and suggest a stronger alternative?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 89,
+      "ability_tags": [
+        "stronger_third_option",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "FreshMarket Brand Greek Yogurt",
+        "Chobani Plain Greek Yogurt"
+      ],
+      "tier": "edge",
+      "text": "I want to compare 'FreshMarket Brand Greek Yogurt' (a small regional chain, likely not in FDC) vs Chobani Plain Greek Yogurt \u2014 what do you do if one candidate is missing from FDC?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 90,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Premier Protein Chocolate Shake",
+        "Optimum Nutrition Gold Standard 100% Whey Chocolate"
+      ],
+      "tier": "edge",
+      "text": "Which is better for best value per gram of protein \u2014 Premier Protein vs Optimum Nutrition Gold Standard Whey? Note: FDC cannot answer cost-per-gram directly; explain the limitation.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 91,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "365 by Whole Foods Market Oat Milk",
+        "Oatly Oat Milk"
+      ],
+      "tier": "edge",
+      "text": "Whole Foods 365 Oat Milk (store brand) vs Oatly Oat Milk \u2014 the store brand may have incomplete FDC data. Compare what you can find and disclose confidence gaps.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 92,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "RXBAR Kids Mixed Berry Bar",
+        "Clif ZBar Chocolate Chip Bar"
+      ],
+      "tier": "edge",
+      "text": "RXBAR Kids Mixed Berry vs Clif ZBar Chocolate Chip \u2014 both market to children, but the serving sizes are different (22 g vs 36 g). Which is better for a child's blood-sugar control per serving and per 100 kcal?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 93,
+      "ability_tags": [
+        "mixed_dataset_handling",
+        "heart_health_sat_fat_sodium_lever"
+      ],
+      "candidates": [
+        "Silk Unsweetened Cashew Milk",
+        "Homemade Cashew Milk"
+      ],
+      "tier": "edge",
+      "text": "Silk Unsweetened Cashew Milk (Branded) vs cashew milk made from generic cashews + water (SR Legacy estimate) \u2014 which is better for CKD patients? Handle mixed data sources and note the SR Legacy extrapolation caveat.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 94,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Krave Basil Citrus Turkey Jerky",
+        "Epic Provisions Turkey Almond Cranberry Bar"
+      ],
+      "tier": "edge",
+      "text": "Krave Basil Citrus Turkey Jerky vs Epic Provisions Turkey Almond Cranberry Bar \u2014 both are high-protein snacks but one may appear only as SR Legacy. Which wins for heart health, and how confident are you?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 95,
+      "ability_tags": [
+        "weight_loss_calorie_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Quaker Instant Oatmeal Original",
+        "Purely Elizabeth Grain-Free Granola"
+      ],
+      "tier": "edge",
+      "text": "Quaker Instant Oatmeal Original (1 packet = 28 g) vs Purely Elizabeth Grain-Free Granola (serving = 1/3 cup \u2248 35 g) \u2014 serving sizes differ significantly. Which is better for weight loss per 100 kcal? Disclose basis.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 96,
+      "ability_tags": [
+        "muscle_gain_protein_lever",
+        "serving_size_disclosure"
+      ],
+      "candidates": [
+        "Babybel Original Cheese",
+        "Sargento Sharp Cheddar Snack Bar"
+      ],
+      "tier": "edge",
+      "text": "Two Babybel Original wheels (38 g total) vs one Sargento Sharp Cheddar Snack Bar (28 g) \u2014 the serving counts differ. Which delivers more protein per serving and per 100 kcal for muscle gain? Disclose the serving-size basis.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 97,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Halo Top Keto Series Chocolate Cheesecake Ice Cream",
+        "Rebel Mint Chip Ice Cream"
+      ],
+      "tier": "edge",
+      "text": "Halo Top Keto Series Chocolate Cheesecake vs Rebel Mint Chip \u2014 nearly identical keto macros. Which wins for blood-sugar control, and if they tie within 2 g net carbs, break the tie on ingredient cleanliness?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 98,
+      "ability_tags": [
+        "blood_sugar_net_carb_lever",
+        "tie_breaker_ingredient_cleanliness"
+      ],
+      "candidates": [
+        "Nature Valley Sweet & Salty Peanut Bar",
+        "Kind Peanut Butter Whole Grain Bar"
+      ],
+      "tier": "edge",
+      "text": "Nature Valley Sweet & Salty Peanut Bar vs Kind Peanut Butter Whole Grain Bar \u2014 both are nearly identical in calories and fat. Which wins for blood-sugar control, and does seed-oil presence in the ingredient list tip the decision?",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    },
+    {
+      "id": 99,
+      "ability_tags": [
+        "heart_health_sat_fat_sodium_lever",
+        "mixed_dataset_handling"
+      ],
+      "candidates": [
+        "Dave's Killer Bread Powerseed",
+        "Ezekiel 4:9 Sprouted Whole Grain Bread"
+      ],
+      "tier": "edge",
+      "text": "Dave's Killer Bread Powerseed (2 slices) vs Ezekiel 4:9 Sprouted Whole Grain Bread (2 slices, SR Legacy) \u2014 which is better for heart health? One is Branded and one may appear as SR Legacy; handle the mixed data sources and disclose confidence.",
+      "expected_endpoints": [
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "labelNutrients",
+        "servingSize",
+        "description"
+      ]
+    }
+  ],
+  "skill_name": "usda-fdc-product-comparison",
+  "generated_at": "2026-04-18",
+  "mode": "hackathon",
+  "split_seed": 2334229865,
+  "train_ids": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    32,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    60,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    70,
+    71,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    89,
+    91,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "val_ids": [],
+  "test_ids": [
+    2,
+    6,
+    8,
+    14,
+    15,
+    21,
+    30,
+    33,
+    49,
+    57,
+    58,
+    59,
+    61,
+    69,
+    72,
+    73,
+    85,
+    88,
+    90,
+    92
+  ],
+  "regression_ids": [],
+  "graduation_threshold": 1.0,
+  "ability_axes": [
+    "blood_sugar_net_carb_lever",
+    "heart_health_sat_fat_sodium_lever",
+    "mixed_dataset_handling",
+    "muscle_gain_protein_lever",
+    "serving_size_disclosure",
+    "stronger_third_option",
+    "tie_breaker_ingredient_cleanliness",
+    "weight_loss_calorie_lever"
+  ],
+  "phase4_params": {
+    "max_rounds": 5,
+    "primary_stop_window": 4,
+    "base_train_batch_size": 20,
+    "decay_rate": 1.0,
+    "val_batch_size": 0,
+    "wilcoxon_alpha": 0.1,
+    "effect_size_floor": 2,
+    "effect_floor_type": "abs_red",
+    "ability_stratified": true
+  },
+  "protocol_version": "2.5",
+  "frozen_at": "2026-04-18T17:25:33.839784+00:00"
+}

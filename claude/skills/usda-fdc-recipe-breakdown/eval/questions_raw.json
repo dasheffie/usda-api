@@ -1,0 +1,1883 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup raw spinach + 1 medium banana + 1 cup whole milk \u2014 how many calories total?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 1,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 large eggs scrambled in 1 tsp butter \u2014 what are the macros (calories, protein, fat, carbs)?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 2,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup rolled oats + 1 cup water \u2014 calories and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 3,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 medium apple + 2 tbsp peanut butter \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 4,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 slice whole wheat bread + 1 oz cheddar cheese \u2014 how many grams of protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 5,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "Half a cup of plain Greek yogurt + 1 tbsp honey \u2014 calories and carbs?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 6,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 medium orange + 1 cup skim milk \u2014 total calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 7,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 tbsp olive oil + 3 oz grilled chicken breast \u2014 fat and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 8,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup cooked brown rice + 1 tbsp soy sauce \u2014 sodium total?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 9,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1/2 cup black beans + 1/4 cup salsa \u2014 iron content?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 10,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup almond milk + 1 medium banana + 1 tbsp almond butter \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 11,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 slices whole wheat toast + 1/4 avocado \u2014 calories and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 12,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup broccoli florets + 1 tsp olive oil \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 13,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "3 oz canned tuna + 1 tbsp mayo \u2014 protein and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 14,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup strawberries + 1 cup plain yogurt \u2014 calcium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 15,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 tbsp butter + 1 cup all-purpose flour \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 16,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 large egg + 1/4 cup shredded mozzarella \u2014 protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 17,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 medium sweet potato + 1 tsp brown sugar \u2014 carbs and calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 18,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup lentils + 2 cups water (cooked) \u2014 fiber and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 19,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 tbsp cream cheese + 1 plain bagel \u2014 total calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 20,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup orange juice + 1 tbsp chia seeds \u2014 calories and fiber?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 21,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "4 oz salmon fillet + 1 tsp lemon juice \u2014 protein and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 22,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup cottage cheese + 1/2 cup blueberries \u2014 protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 23,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 medium carrot + 2 tbsp hummus \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 24,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup raw oats + 1 tbsp maple syrup + 1 cup 2% milk \u2014 total calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 25,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 oz cheddar + 6 whole grain crackers \u2014 fat and calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 26,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 tbsp flaxseed + 1 cup unsweetened almond milk \u2014 fiber?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 27,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "3 oz ground beef (80% lean) + 1 oz American cheese \u2014 fat and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 28,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 medium banana + 1 tbsp peanut butter \u2014 potassium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 29,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1/2 cup frozen edamame + 1 tsp sesame oil \u2014 protein and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 30,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup whole milk + 2 tbsp cocoa powder + 1 tsp sugar \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 31,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "4 oz boneless chicken thigh + 1 tbsp olive oil \u2014 calories and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 32,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1/2 cup cooked quinoa + 1/4 cup cucumber slices \u2014 carbs?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 33,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 tbsp sunflower seeds + 1 medium apple \u2014 calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 34,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup beef broth + 2 oz lean ground beef \u2014 sodium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 35,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 tsp cinnamon + 1 cup oatmeal + 1 tbsp brown sugar \u2014 total carbs?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 36,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "2 large eggs + 1/4 cup bell pepper \u2014 calories and vitamin C?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 37,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "1 cup raspberry + 1 tbsp sugar \u2014 carbs?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 38,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "easy",
+      "text": "3 oz shrimp + 1 tsp garlic powder \u2014 protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 39,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "ingredient_not_in_fdc_substitute"
+      ],
+      "tier": "easy",
+      "text": "1/2 cup canned chickpeas + 1 tbsp tahini \u2014 iron? Note: if tahini isn't in FDC as a prepared product, use the best available substitute and disclose it.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 40,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Greek salad: 4 cups romaine lettuce, 1/2 cup cucumber slices, 1/4 cup kalamata olives, 3 oz feta cheese, 1/4 cup cherry tomatoes, 2 tbsp olive oil, 1 tbsp red wine vinegar \u2014 give me macros and sodium.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 41,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Overnight oats: 1/2 cup rolled oats, 3/4 cup oat milk, 1 tbsp chia seeds, 1/2 cup blueberries, 1 tbsp almond butter, 1 tsp honey \u2014 total calories, protein, and fiber for 1 serving.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 42,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Chicken stir-fry: 5 oz chicken breast, 1 cup broccoli, 1/2 cup snap peas, 2 tbsp soy sauce, 1 tbsp sesame oil, 1 cup cooked white rice \u2014 total calories, protein, and sodium.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 43,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Veggie omelet: 3 large eggs, 1/4 cup diced onion, 1/4 cup diced bell pepper, 1/4 cup mushrooms, 1 oz Swiss cheese, 1 tsp butter \u2014 macros breakdown?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 44,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Pasta primavera: 2 oz dry pasta, 1 cup mixed vegetables (zucchini, bell pepper, onion), 2 tbsp olive oil, 2 tbsp parmesan, 2 cloves garlic \u2014 calories, carbs, and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 45,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Lentil soup: 1 cup dry green lentils, 2 medium carrots, 2 stalks celery, 1 medium onion, 2 cloves garlic, 1 tbsp olive oil, 4 cups vegetable broth \u2014 iron and fiber for the whole pot.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 46,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Turkey wrap: 1 large flour tortilla, 4 oz sliced turkey breast, 2 tbsp mayo, 1 cup romaine, 1/4 cup shredded carrot, 1 oz provolone \u2014 macros and sodium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 47,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Smoothie bowl: 1 cup frozen acai pulp, 1/2 cup frozen mango, 1 medium banana, 1/2 cup coconut milk, toppings: 1 tbsp granola, 1 tbsp coconut flakes \u2014 total calories and sugar?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 48,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Bean burrito filling: 1 cup pinto beans, 1/2 cup cooked brown rice, 1/4 cup salsa, 1/4 cup shredded cheddar, 2 tbsp sour cream \u2014 total calories and iron?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 49,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Banana bread batter: 3 medium bananas, 2 cups all-purpose flour, 1/2 cup sugar, 1/4 cup butter, 2 large eggs, 1 tsp baking soda \u2014 calories and carbs for the whole loaf?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 50,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Quinoa power bowl: 1 cup cooked quinoa, 3 oz grilled salmon, 1/2 cup edamame, 1/2 cup roasted sweet potato, 2 tbsp tahini dressing \u2014 give me macros and calcium.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 51,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Tuna salad sandwich: 3 oz canned tuna, 2 tbsp mayo, 1 tbsp diced celery, 2 slices whole wheat bread, 2 leaves romaine \u2014 protein and sodium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 52,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Chocolate protein shake: 1 cup whole milk, 1 scoop whey protein powder (30g), 1 medium banana, 2 tbsp cocoa powder, 1 tbsp peanut butter, 5 ice cubes \u2014 total calories and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 53,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Minestrone soup: 1/2 cup kidney beans, 1/2 cup elbow pasta, 1 cup diced tomatoes, 1 medium zucchini, 1 medium carrot, 1/2 cup spinach, 3 cups vegetable broth \u2014 fiber and sodium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 54,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Chicken Caesar salad: 4 cups romaine, 4 oz grilled chicken breast, 1 oz parmesan, 1/4 cup croutons, 2 tbsp Caesar dressing \u2014 total calories and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 55,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Oatmeal raisin cookie dough (makes 24 cookies): 2 cups oats, 1 cup flour, 1/2 cup butter, 1/2 cup brown sugar, 1/2 cup raisins, 2 eggs, 1 tsp vanilla \u2014 macros per cookie?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 56,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output"
+      ],
+      "tier": "moderate",
+      "text": "Beef taco filling (serves 4): 1 lb ground beef, 1 packet taco seasoning (28g), 1/2 cup diced onion, 1/4 cup tomato paste \u2014 calories per taco?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 57,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Spinach and feta frittata (6 portions): 6 large eggs, 1 cup fresh spinach, 2 oz feta, 1/4 cup milk, 1 tbsp olive oil \u2014 calories and protein per slice?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 58,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Pesto pasta: 3 oz dry spaghetti, 2 tbsp basil pesto, 1 oz pine nuts, 1 oz parmesan, 1 cup cherry tomatoes \u2014 calories, fat, and carbs?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 59,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Vegetable curry (serves 3): 2 cups coconut milk, 1 cup diced tomatoes, 1 cup chickpeas, 1 medium potato, 1 cup spinach, 2 tbsp curry powder \u2014 macros per serving?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 60,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "moderate",
+      "text": "Mango lassi: 1 cup mango chunks, 1 cup plain yogurt, 1/2 cup whole milk, 2 tbsp sugar, 1/4 tsp cardamom \u2014 calories and sugar?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 61,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Shrimp fried rice: 1 cup cooked white rice, 4 oz shrimp, 2 large eggs, 1/2 cup frozen peas, 2 tbsp soy sauce, 1 tbsp vegetable oil, 2 green onions \u2014 sodium and protein?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 62,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Avocado toast plate: 2 slices sourdough, 1/2 medium avocado, 2 large eggs (poached), 1 tsp red pepper flakes, 1 tsp everything bagel seasoning \u2014 total macros?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 63,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Chicken noodle soup (serves 6): 8 oz chicken breast, 2 cups egg noodles, 3 medium carrots, 3 stalks celery, 1 medium onion, 6 cups chicken broth \u2014 sodium per serving?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 64,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Blueberry muffins (makes 12): 2 cups flour, 3/4 cup sugar, 1/2 cup butter, 2 eggs, 3/4 cup milk, 1 cup blueberries, 1 tsp baking powder \u2014 calories per muffin?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 65,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Black bean tacos (makes 4): 1 cup black beans, 4 small corn tortillas, 1/2 cup corn, 1/4 cup red onion, 1/4 cup cilantro, 1 tbsp lime juice \u2014 iron and fiber per taco?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 66,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Hummus bowl: 1/2 cup homemade hummus, 1/4 cup cucumber, 1/4 cup cherry tomatoes, 1/4 cup kalamata olives, 2 tbsp olive oil, 1 whole wheat pita \u2014 macros and calcium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 67,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Steak salad: 5 oz sirloin steak, 3 cups mixed greens, 1/2 cup cherry tomatoes, 1/4 cup red onion, 2 tbsp balsamic vinaigrette, 1 oz blue cheese \u2014 total macros?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 68,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Cauliflower fried rice: 2 cups riced cauliflower, 2 large eggs, 1/2 cup frozen peas and carrots, 2 tbsp soy sauce, 1 tbsp sesame oil, 2 oz chicken breast \u2014 calories and fat?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 69,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "moderate",
+      "text": "Strawberry banana smoothie: 1 cup frozen strawberries, 1 medium banana, 3/4 cup Greek yogurt, 1/2 cup orange juice, 1 tbsp honey \u2014 total calories and vitamin C?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 70,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Chili (serves 8): 1 lb ground turkey, 2 cups kidney beans, 1 can diced tomatoes (14.5 oz), 1 medium onion, 1 medium green bell pepper, 2 tbsp chili powder, 1 cup beef broth \u2014 protein and sodium per serving?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 71,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Egg salad: 4 large hard-boiled eggs, 3 tbsp mayo, 1 tbsp yellow mustard, 2 stalks celery \u2014 fat and calories?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 72,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "moderate",
+      "text": "Caprese salad: 2 medium tomatoes, 4 oz fresh mozzarella, 1 tbsp fresh basil, 2 tbsp olive oil, 1 tsp balsamic vinegar \u2014 total fat and calcium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 73,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Granola bars (makes 10): 2 cups oats, 1/3 cup honey, 1/4 cup almond butter, 1/4 cup mini chocolate chips, 1/4 cup dried cranberries, 2 tbsp coconut oil \u2014 calories and sugar per bar?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 74,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Beef and broccoli stir-fry: 6 oz flank steak, 2 cups broccoli, 2 tbsp oyster sauce, 1 tbsp soy sauce, 1 tbsp cornstarch, 1 tsp sesame oil \u2014 protein and sodium?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 75,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Vegetable frittata (serves 4): 6 eggs, 1/2 cup diced zucchini, 1/2 cup cherry tomatoes, 1/4 cup goat cheese, 1/4 cup baby spinach, 1 tbsp olive oil \u2014 calories and fat per serving?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 76,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Loaded baked potato soup (serves 4): 3 large russet potatoes, 4 strips bacon, 1 cup shredded cheddar, 1/2 cup sour cream, 3 cups chicken broth, 2 green onions \u2014 sodium and fat per bowl?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 77,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Poke bowl: 1 cup cooked sushi rice, 4 oz raw ahi tuna, 1/2 avocado, 1/4 cup cucumber, 1 tbsp soy sauce, 1 tsp sesame oil, 1 tbsp sesame seeds \u2014 full macro breakdown?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 78,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "moderate",
+      "text": "Apple cinnamon oatmeal: 1 cup old-fashioned oats, 1 medium apple (diced), 1 tbsp butter, 1 tsp cinnamon, 1 tbsp brown sugar, 1 cup whole milk \u2014 calories and fiber?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 79,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "batch_fetch_efficient"
+      ],
+      "tier": "moderate",
+      "text": "Falafel wrap: 4 homemade falafel patties (~30g each), 1 whole wheat pita, 2 tbsp tzatziki, 1/4 cup shredded lettuce, 2 slices tomato, 1/4 cup red onion \u2014 total macros?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 80,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Tabbouleh: 1 cup cooked bulgur wheat, 2 tbsp sumac (the spice), 1/4 cup fresh parsley, 2 tbsp fresh mint, 2 tbsp olive oil, 1 medium tomato, 1 tbsp lemon juice \u2014 macros? Note sumac may not have a direct FDC entry.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 81,
+      "ability_tags": [
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "1 cup cooked rice \u2014 please clarify: is this using the cooked-rice FDC entry or the raw-rice entry scaled to cooked weight? I want the accurate calorie count.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 82,
+      "ability_tags": [
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "1 cup cooked spinach + 1/2 cup cooked lentils \u2014 iron? Use the cooked versions, not raw.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 83,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "I have a recipe with 2 tbsp za'atar spice blend \u2014 what's the best FDC substitute and what are the macros for that amount?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 84,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output"
+      ],
+      "tier": "edge",
+      "text": "Whole roasted chicken (serves 6): 1 large whole chicken (~3.5 lbs), 2 tbsp olive oil, 1 tbsp rosemary, 1 tsp thyme \u2014 protein and fat per serving. The recipe uses the whole bird including skin.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 85,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "ambiguous_ingredient_disclosure"
+      ],
+      "tier": "edge",
+      "text": "Fermented black garlic (2 tbsp) + 1 cup white rice \u2014 is black garlic in FDC? If not, substitute regular garlic and disclose. Total macros?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 86,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Miso soup: 1 tbsp white miso paste, 2 cups dashi stock, 1/4 cup tofu (soft), 1 tbsp wakame seaweed \u2014 sodium. Note: dashi stock may need a substitute if not in FDC.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 87,
+      "ability_tags": [
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Smoothie made with 1 cup raw kale vs 1 cup cooked kale \u2014 explain which FDC entry you use for each version and what the calorie difference is.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 88,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "edge",
+      "text": "Bread recipe (makes 12 slices): 3 cups bread flour, 1 tbsp active dry yeast, 1 tsp salt, 1 tbsp olive oil, 1 cup warm water \u2014 note that baking reduces water weight; what are the macros per slice?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 89,
+      "ability_tags": [
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "1 large head of romaine lettuce (whole head used) \u2014 how do you convert 'one head' to grams? Give me total calories, fiber, and iron.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 90,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Harissa paste (2 tbsp) + 1 cup cooked couscous \u2014 harissa is a blend not in FDC. What ingredient do you substitute and what are the macros?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 91,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "My recipe calls for 'a handful of pine nuts' (roughly 1 oz) \u2014 resolve the vague unit, find the FDC entry, and report fat and calories.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 92,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "portion_conversion_cup_to_grams",
+        "micro_sum_across_ingredients",
+        "ambiguous_ingredient_disclosure"
+      ],
+      "tier": "edge",
+      "text": "Bone broth (homemade, 2 cups) \u2014 this isn't a single FDC ingredient. What's the best substitute (beef broth? chicken broth?) and what's the sodium estimate?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 93,
+      "ability_tags": [
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Coconut cream (1/4 cup) vs coconut milk (1/4 cup) \u2014 these are different products. I used coconut cream. Make sure to pick the right FDC entry and give me fat and calories.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 94,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "edge",
+      "text": "Trail mix recipe (makes 10 servings): 2 cups mixed nuts, 1 cup dried cranberries, 1 cup dark chocolate chips, 1/2 cup pumpkin seeds, 1/4 cup coconut flakes \u2014 calories and fat per serving?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 95,
+      "ability_tags": [
+        "ingredient_resolution_sr_legacy",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "edge",
+      "text": "Protein pancakes (makes 8 small pancakes): 1 cup oat flour, 1 scoop vanilla protein powder (35g), 2 eggs, 1/2 cup cottage cheese, 1 tsp baking powder \u2014 protein and calories per pancake?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 96,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "ingredient_resolution_sr_legacy",
+        "micro_sum_across_ingredients",
+        "ambiguous_ingredient_disclosure"
+      ],
+      "tier": "edge",
+      "text": "My recipe uses 'amaranth leaves' (2 cups raw) \u2014 this is a less common leafy green. What FDC entry do you use or substitute, and what is the iron content?",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 97,
+      "ability_tags": [
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "edge",
+      "text": "Loaded nachos (serves 6): 8 oz tortilla chips, 1.5 cups shredded cheddar, 1 cup black beans, 1/2 cup sour cream, 1/4 cup pickled jalape\u00f1os, 1/4 cup salsa \u2014 give me calories, fat, and sodium per serving. Note: pickled jalape\u00f1os may differ from fresh jalape\u00f1os in FDC.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 98,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients"
+      ],
+      "tier": "edge",
+      "text": "Tahini dressing: 3 tbsp tahini, 1 tbsp lemon juice, 1 tbsp water, 1/2 tsp garlic powder \u2014 FDC lists sesame seeds and sesame butter; which entry should be used for tahini? Report fat and calories for the full dressing.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    },
+    {
+      "id": 99,
+      "ability_tags": [
+        "ingredient_not_in_fdc_substitute",
+        "ambiguous_ingredient_disclosure",
+        "portion_conversion_cup_to_grams",
+        "macro_sum_across_ingredients",
+        "micro_sum_across_ingredients",
+        "per_serving_output",
+        "batch_fetch_efficient"
+      ],
+      "tier": "edge",
+      "text": "Korean bibimbap (serves 2): 1.5 cups cooked short-grain rice, 2 large eggs, 2 cups bean sprouts, 1 cup spinach (cooked), 2 oz ground beef, 2 tbsp gochujang sauce, 1 tsp sesame oil \u2014 macros and iron per serving. Note: gochujang may not be in FDC; choose best substitute and disclose.",
+      "expected_endpoints": [
+        "GET /foods/search",
+        "POST /foods"
+      ],
+      "expected_fields": [
+        "foodNutrients",
+        "servingSize"
+      ]
+    }
+  ],
+  "skill_name": "usda-fdc-recipe-breakdown",
+  "generated_at": "2026-04-18"
+}
