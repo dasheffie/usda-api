@@ -30,3 +30,9 @@ Thumbs.db
 
 # Phase 4+ generated artifacts that are large / noisy (keep trajectory.jsonl; drop big binaries)
 *.log
+
+# Runner output directory (parent-repo logs + summary jsonl — regenerable from worktree terminal_summary.json)
+/runs/
+
+# Local Claude Code state
+.claude/
