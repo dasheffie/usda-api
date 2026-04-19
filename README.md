@@ -1,8 +1,8 @@
-# USDA FoodData Central Skills for Claude
+# USDA FoodData Central Skills
 
-A constellation of **13 ready-to-use [Claude Code](https://claude.com/claude-code) skills** that wrap the [USDA FoodData Central (FDC) API](https://fdc.nal.usda.gov/api-guide). Drop them into any Claude-powered agent and it instantly gains detailed knowledge of the US government's nutrition database — over 400,000 foods with full macronutrient, micronutrient, ingredient, and label data.
+A constellation of **13 ready-to-use skills** that wrap the [USDA FoodData Central (FDC) API](https://fdc.nal.usda.gov/api-guide). Drop them into any agent runtime that loads skills from a directory and the agent instantly gains detailed knowledge of the US government's nutrition database — over 400,000 foods with full macronutrient, micronutrient, ingredient, and label data.
 
-Each skill was **trained and validated** against 100 held-out questions per ability using the [api-skill-builder](https://github.com/anthropics/skills) meta-protocol. You're not getting un-tested prompt text — you're getting prompts whose refinement trajectories, Phase 6 graduation tests, and Phase 8a paired diagnostics are all published in this repo.
+Each skill was **trained and validated** against 100 held-out questions per ability. You're not getting un-tested prompt text — you're getting prompts whose refinement trajectories, held-out graduation tests, and paired diagnostics are all published in this repo.
 
 ## What superpowers does this give your agent?
 
@@ -28,7 +28,7 @@ All 13 skills hit the real FDC API (no mocked data) and cite the FDC ID + dataTy
 
 ## Refinement evidence
 
-Every skill was iterated for **3 rounds** of greedy rewrites (Hackathon Mode), then graduated against a held-out test set. See the aggregate improvement chart at `claude/aggregate-trajectories.png`, and per-skill trajectories at `claude/skills/<skill>/references/trajectory.png`.
+Every skill was iterated for **3 rounds** of greedy rewrites, then graduated against a held-out test set. See the aggregate improvement chart at [`aggregate-trajectories.png`](aggregate-trajectories.png), and per-skill trajectories at [`skills/<skill>/references/trajectory.png`](skills/).
 
 Results by skill:
 
@@ -48,13 +48,13 @@ Results by skill:
 | usda-fdc-dining-out | NOT_SHIPPED | 1.10 | [1.00, 1.25] |
 | usda-fdc-daily-intake-tally | NOT_SHIPPED | 1.65 | [1.45, 1.85] |
 
-**Legend:** `mean-issues` is the average number of grading issues the Opus counter found across 20 unseen test questions. Lower is better. `SHIPPED_CLEAN` ≤ 1.0 upper CI. `SHIPPED_PLATEAU` means improvements stopped but test score is within acceptable range. `NOT_SHIPPED` passed the test marginally — the skill still works, but extra caution is warranted.
+**Legend:** `mean-issues` is the average number of grading issues an independent counter found across 20 unseen test questions. Lower is better. `SHIPPED_CLEAN` ≤ 1.0 upper CI. `SHIPPED_PLATEAU` means improvements stopped but test score is within acceptable range. `NOT_SHIPPED` passed the test marginally — the skill still works, but extra caution is warranted.
 
 ## Setup
 
 ### Prerequisites
 
-- [Claude Code](https://claude.com/claude-code) installed — or any agent that loads skills from a directory
+- An agent runtime that loads skills from a directory (one `SKILL.md` per skill with optional `references/` for supporting files)
 - A free USDA FoodData Central API key (instructions below)
 - ~1 minute to set up
 
@@ -96,26 +96,20 @@ echo "USDA_FDC_API_KEY=your_real_key_here" > .env
 
 Every skill's SKILL.md embeds `${USDA_FDC_API_KEY}` in its curl examples, so whichever method you pick, the skills will see the key.
 
-### Step 4 — Install the skills into Claude Code
+### Step 4 — Install the skills into your agent
 
-Copy the skills into your Claude Code user skills directory:
-
-```bash
-# macOS / Linux
-cp -r claude/skills/usda-fdc-* ~/.claude/skills/
-
-# Windows (PowerShell)
-Copy-Item -Recurse claude\skills\usda-fdc-* $env:USERPROFILE\.claude\skills\
-```
-
-Or, if you want them scoped to just one project:
+Copy the skill directories into wherever your agent loads skills from. For example:
 
 ```bash
-mkdir -p .claude/skills
-cp -r claude/skills/usda-fdc-* .claude/skills/
+# if your agent reads skills from a user-scoped directory
+cp -r skills/usda-fdc-* /path/to/your/agent/skills/
+
+# or scope them to a single project
+mkdir -p .your-agent/skills
+cp -r skills/usda-fdc-* .your-agent/skills/
 ```
 
-That's it. Next time you start a Claude Code session, the `/skills` list will include all 13 `usda-fdc-*` skills, and Claude will auto-discover them when the conversation touches nutrition questions.
+Check your agent's documentation for the exact target directory. Each skill is self-contained — one `SKILL.md` with YAML frontmatter plus an optional `references/` folder.
 
 ### Step 5 — Try it
 
@@ -125,41 +119,43 @@ That's it. Next time you start a Claude Code session, the `/skills` list will in
 > suggest 3 high-protein branded snacks under 200 calories each.
 ```
 
-Claude should invoke `usda-fdc-daily-intake-tally` to compute the running protein total, then `usda-fdc-low-sugar-snack` or `usda-fdc-macro-alignment` to surface the snack options — all backed by real FDC data.
+Your agent should invoke `usda-fdc-daily-intake-tally` to compute the running protein total, then `usda-fdc-low-sugar-snack` or `usda-fdc-macro-alignment` to surface snack options — all backed by real FDC data.
 
 ## Repo layout
 
 ```
-claude/
+.
 ├── aggregate-trajectories.png          # One chart showing improvement across all 13 skills
-└── skills/
-    └── usda-fdc-<ability>/
-        ├── SKILL.md                    # The prompt Claude loads (the actual skill)
-        └── references/
-            └── trajectory.png          # Per-skill refinement chart
+├── skills/
+│   └── usda-fdc-<ability>/
+│       ├── SKILL.md                    # The prompt the agent loads (the actual skill)
+│       └── references/
+│           └── trajectory.png          # Per-skill refinement chart
+├── LICENSE
+└── README.md
 ```
 
-Only `SKILL.md` and `references/` are tracked in git; each skill's `eval/`, `runs/`, and per-round artifacts stay local to the training machine (see `.gitignore`).
+Only `SKILL.md` and `references/` are tracked in git; training artifacts (per-round dispatches, trajectory JSONL, test results) stay local to the training machine (see `.gitignore`).
 
 ## How the skills were built
 
-The training pipeline is the open-source [api-skill-builder](https://github.com/anthropics/skills) meta-skill (v3.0), which enforces:
+The training pipeline enforces:
 
 1. **One ability = one skill** — endpoints and parse strategies are kept byte-identical within a skill
 2. **100 stratified test questions per skill** (40 easy / 40 moderate / 20 edge), frozen before training starts
-3. **Three-role subagent split** — Haiku answers user questions, Opus counts issues, Opus proposes edits; roles never collapse so no model scores its own work
-4. **Hackathon Mode greedy acceptance** — every non-empty edit list is applied, then a single held-out test at Phase 6 confirms the skill still works on unseen questions
-5. **Paired Wilcoxon diagnostic (Phase 8a)** comparing round 1 baseline vs. final SKILL.md on 20 shared questions, to verify the trajectory actually converged instead of drifting
+3. **Three-role grading split** — one model answers user questions, a second counts issues, a third proposes edits; roles never collapse so no model scores its own work
+4. **Greedy acceptance** — every non-empty edit list is applied, then a single held-out test confirms the skill still works on unseen questions
+5. **Paired diagnostic** comparing round 1 baseline vs. final SKILL.md on 20 shared questions, verifying the trajectory converged instead of drifting
 
 This repo contains only the finished SKILL.md files and the trajectory charts — the training artifacts, API briefings, and helper scripts stay local.
 
 ## Contributing / customizing
 
-The easiest way to extend:
+The easiest ways to extend:
 
 - **Change the answer style:** edit `SKILL.md` directly. The skill is just a markdown prompt; no code to rebuild.
-- **Add a new ability:** fork, add `claude/skills/your-new-skill/SKILL.md` following the existing shape (YAML frontmatter + When to Use + API Surface + Minimal Happy Path + Common Mistakes).
-- **Retrain with new questions:** install [api-skill-builder](https://github.com/anthropics/skills) and rerun Phase 3 onward in a worktree.
+- **Add a new ability:** fork, add `skills/your-new-skill/SKILL.md` following the existing shape (YAML frontmatter + When to Use + API Surface + Minimal Happy Path + Common Mistakes).
+- **Retrain with new questions:** rerun your training pipeline of choice against the `skills/*/SKILL.md` starting point.
 
 Pull requests welcome.
 
@@ -170,5 +166,4 @@ MIT — see [LICENSE](LICENSE). Use, fork, remix, commercialize — the only req
 ## Credits
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/) for the data
-- [Claude Code](https://claude.com/claude-code) / [Anthropic](https://anthropic.com) for the skill-loading runtime and the `api-skill-builder` meta-skill
 - Trained and packaged by [David Sheffield](https://github.com/dasheffie)

@@ -5,11 +5,12 @@
 !/.gitignore
 !/README.md
 !/LICENSE
-!/claude/
+!/aggregate-trajectories.png
+!/skills/
 
-# Inside each skill dir under claude/skills/, ignore everything
+# Inside each skill dir under skills/, ignore everything
 # except SKILL.md and the references/ folder (and its contents).
-/claude/skills/*/**
-!/claude/skills/*/SKILL.md
-!/claude/skills/*/references/
-!/claude/skills/*/references/**
+/skills/*/**
+!/skills/*/SKILL.md
+!/skills/*/references/
+!/skills/*/references/**
