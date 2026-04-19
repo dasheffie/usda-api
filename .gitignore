@@ -3,6 +3,8 @@
 
 # Top-level escape hatches.
 !/.gitignore
+!/README.md
+!/LICENSE
 !/claude/
 
 # Inside each skill dir under claude/skills/, ignore everything
