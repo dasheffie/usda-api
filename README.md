@@ -4,6 +4,12 @@ A constellation of **13 ready-to-use skills** that wrap the [USDA FoodData Centr
 
 Each skill was **trained and validated** against 100 held-out questions per ability. You're not getting un-tested prompt text — you're getting prompts whose refinement trajectories, held-out graduation tests, and paired diagnostics are all published in this repo.
 
+## Watch the 45-second explainer
+
+<video src="<PLACEHOLDER_GITHUB_URL>" controls width="720"></video>
+
+_Prefer to read? The full story is below. Source composition: [`docs/explainer/`](docs/explainer/)._
+
 ## What superpowers does this give your agent?
 
 With these skills enabled, your agent can answer questions like:

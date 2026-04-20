@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: #0a0a0a;
+        font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+        font-variant-numeric: tabular-nums;
+        color: #f4f4f5;
+      }
+
+      /* ======== ROOT COMPOSITION ======== */
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+
+      /* Ambient background: subtle radial pulse */
+      .bg-radial {
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at center, rgba(6,182,212,0.08) 0%, rgba(10,10,10,0) 55%);
+        pointer-events: none; z-index: 0;
+      }
+      .bg-grid {
+        position: absolute; inset: 0; z-index: 0; opacity: 0.08;
+        background-image:
+          linear-gradient(to right, #06b6d4 1px, transparent 1px),
+          linear-gradient(to bottom, #06b6d4 1px, transparent 1px);
+        background-size: 80px 80px;
+        mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+      }
+
+      /* All scenes stack in the same space and fade in/out */
+      .scene {
+        position: absolute; inset: 0;
+        display: flex; flex-direction: column;
+        width: 100%; height: 100%;
+        padding: 120px 140px 220px 140px;
+        box-sizing: border-box;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      /* ======== SCENE 1 · COLD OPEN ======== */
+      #s1 { justify-content: center; align-items: center; gap: 48px; }
+      #s1 .eyebrow {
+        font-size: 22px; font-weight: 500; letter-spacing: 0.25em;
+        color: #a1a1aa; text-transform: uppercase;
+      }
+      #s1 .title {
+        font-size: 150px; font-weight: 700; line-height: 1.02;
+        color: #f4f4f5; text-align: center; letter-spacing: -0.02em;
+      }
+      #s1 .title .accent { color: #06b6d4; }
+      #s1 .subtitle {
+        font-size: 28px; color: #a1a1aa; letter-spacing: 0.08em;
+        text-align: center;
+      }
+      #s1 .chips {
+        display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
+        max-width: 1500px; margin-top: 24px;
+      }
+      #s1 .chip {
+        font-size: 18px; color: #06b6d4;
+        border: 1px solid rgba(6,182,212,0.5);
+        padding: 10px 18px; border-radius: 999px;
+        background: rgba(6,182,212,0.04);
+        letter-spacing: 0.04em;
+      }
+      #s1 .readout {
+        position: absolute; top: 60px; right: 80px;
+        font-size: 20px; color: #a1a1aa; letter-spacing: 0.1em;
+        display: flex; gap: 24px; align-items: center;
+      }
+      #s1 .readout .dot {
+        width: 10px; height: 10px; border-radius: 50%;
+        background: #06b6d4; box-shadow: 0 0 12px #06b6d4;
+      }
+      #s1 .rule {
+        position: absolute; left: 140px; right: 140px; bottom: 80px;
+        height: 1px; background: linear-gradient(90deg, transparent, #06b6d4 20%, #7c3aed 80%, transparent);
+        transform-origin: center;
+      }
+
+      /* ======== SCENE 2 · USE CASES (4 cards) ======== */
+      #s2 { padding: 140px 140px 220px 140px; }
+      #s2 .s2-header {
+        font-size: 24px; letter-spacing: 0.2em; color: #a1a1aa;
+        text-transform: uppercase; margin-bottom: 40px;
+      }
+      #s2 .grid {
+        display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+        gap: 28px; flex: 1;
+      }
+      #s2 .card {
+        position: relative;
+        border: 1px solid rgba(161,161,170,0.25);
+        background: rgba(255,255,255,0.015);
+        padding: 48px 56px;
+        display: flex; flex-direction: column; justify-content: space-between;
+        opacity: 0.4;
+      }
+      #s2 .card.active { opacity: 1; }
+      #s2 .card .glyph {
+        font-size: 64px; color: #06b6d4; line-height: 1;
+      }
+      #s2 .card .label {
+        font-size: 20px; color: #a1a1aa; letter-spacing: 0.12em;
+        text-transform: uppercase; margin-top: 36px;
+      }
+      #s2 .card .query {
+        font-size: 30px; color: #f4f4f5; line-height: 1.3; margin-top: 14px;
+        max-width: 100%;
+      }
+      #s2 .card .highlight {
+        color: #06b6d4; font-weight: 700;
+      }
+      #s2 .card::before {
+        content: ""; position: absolute; top: 0; left: 0;
+        height: 2px; background: #06b6d4; width: 0;
+        box-shadow: 0 0 18px rgba(6,182,212,0.7);
+      }
+      #s2 .card.active::before { width: 100%; }
+
+      /* ======== SCENE 3 · WHAT A SKILL IS ======== */
+      #s3 { flex-direction: row; align-items: stretch; gap: 80px; padding: 140px 140px 220px 140px; }
+      #s3 .left { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+      #s3 .right { flex: 1.2; display: flex; align-items: center; justify-content: center; }
+      #s3 .tree-title {
+        font-size: 22px; color: #a1a1aa; letter-spacing: 0.2em;
+        text-transform: uppercase; margin-bottom: 28px;
+      }
+      #s3 .tree-line {
+        font-size: 26px; line-height: 1.55; color: #f4f4f5; white-space: pre;
+      }
+      #s3 .tree-line.accent { color: #06b6d4; }
+      #s3 .tree-line .dim { color: #71717a; }
+
+      #s3 .card {
+        width: 620px; min-height: 560px;
+        border: 1px solid rgba(6,182,212,0.4);
+        background: rgba(6,182,212,0.03);
+        padding: 44px 48px;
+        display: flex; flex-direction: column;
+        position: relative;
+      }
+      #s3 .card::after {
+        content: ""; position: absolute; inset: 0;
+        border: 1px solid rgba(124,58,237,0.2);
+        transform: translate(14px, 14px);
+        pointer-events: none; z-index: -1;
+      }
+      #s3 .card-filename {
+        font-size: 26px; color: #06b6d4; margin-bottom: 36px; letter-spacing: 0.04em;
+      }
+      #s3 .card-region {
+        margin-bottom: 32px;
+        padding-left: 18px;
+        border-left: 2px solid rgba(124,58,237,0.5);
+      }
+      #s3 .card-region .reg-label {
+        font-size: 16px; color: #a1a1aa; letter-spacing: 0.2em;
+        text-transform: uppercase; margin-bottom: 8px;
+      }
+      #s3 .card-region .reg-body {
+        font-size: 22px; color: #f4f4f5; line-height: 1.45;
+      }
+
+      /* ======== SCENE 4 · GRADING LOOP ======== */
+      #s4 {
+        align-items: center; justify-content: center;
+        padding: 140px 140px 220px 140px;
+      }
+      #s4 .title {
+        font-size: 32px; color: #a1a1aa; letter-spacing: 0.22em;
+        text-transform: uppercase; margin-bottom: 36px;
+      }
+      #s4 .diagram {
+        position: relative;
+        width: 820px; height: 560px;
+      }
+      #s4 .orbit {
+        position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%,-50%);
+        width: 780px; height: 520px;
+        border: 1px dashed rgba(124,58,237,0.55);
+        border-radius: 50%;
+      }
+      #s4 .node {
+        position: absolute;
+        width: 220px; height: 220px;
+        border-radius: 50%;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        border: 2px solid; background: rgba(10,10,10,0.6);
+        backdrop-filter: blur(2px);
+      }
+      #s4 .node.answerer   { top: 0;    left: 50%; transform: translateX(-50%); border-color: #06b6d4; box-shadow: 0 0 40px rgba(6,182,212,0.35); }
+      #s4 .node.counter    { bottom: 0; left: 0;                             border-color: #fbbf24; box-shadow: 0 0 40px rgba(251,191,36,0.28); }
+      #s4 .node.editor     { bottom: 0; right: 0;                            border-color: #7c3aed; box-shadow: 0 0 40px rgba(124,58,237,0.32); }
+      #s4 .node .role-num  {
+        font-size: 14px; letter-spacing: 0.3em; color: #a1a1aa;
+        text-transform: uppercase; margin-bottom: 8px;
+      }
+      #s4 .node .role-name { font-size: 30px; font-weight: 700; }
+      #s4 .node.answerer .role-name { color: #06b6d4; }
+      #s4 .node.counter  .role-name { color: #fbbf24; }
+      #s4 .node.editor   .role-name { color: #7c3aed; }
+      #s4 .node .role-verb { font-size: 18px; color: #a1a1aa; margin-top: 6px; }
+
+      #s4 .orbit-pulse {
+        position: absolute; width: 14px; height: 14px; border-radius: 50%;
+        background: #06b6d4; box-shadow: 0 0 18px #06b6d4;
+        left: 50%; top: 0; margin-left: -7px; margin-top: -7px;
+      }
+      #s4 .round-label {
+        position: absolute; top: -48px; left: 50%; transform: translateX(-50%);
+        font-size: 20px; color: #a78bfa; letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+
+      #s4 .stat-footer {
+        font-size: 28px; color: #f4f4f5; letter-spacing: 0.08em;
+        margin-top: 36px;
+      }
+      #s4 .stat-footer .accent { color: #06b6d4; font-weight: 700; }
+
+      /* ======== SCENE 5 · RESULTS ======== */
+      #s5 { align-items: center; justify-content: center; padding: 110px 140px 200px 140px; }
+      #s5 .caption {
+        font-size: 24px; color: #a1a1aa; letter-spacing: 0.2em;
+        text-transform: uppercase; margin-bottom: 20px;
+      }
+      #s5 .chart-frame {
+        position: relative;
+        width: 1400px; max-height: 680px;
+        border: 1px solid rgba(6,182,212,0.25);
+        padding: 18px;
+        background: rgba(10,10,10,0.4);
+      }
+      #s5 .chart-frame img {
+        display: block; width: 100%; height: auto;
+      }
+      #s5 .pills {
+        display: flex; gap: 28px; justify-content: center;
+        margin-top: 32px;
+      }
+      #s5 .pill {
+        padding: 18px 32px; border: 1.5px solid;
+        border-radius: 999px; display: flex; align-items: baseline; gap: 12px;
+        background: rgba(10,10,10,0.6);
+      }
+      #s5 .pill.clean    { border-color: #06b6d4; color: #06b6d4; }
+      #s5 .pill.plateau  { border-color: #7c3aed; color: #c4b5fd; }
+      #s5 .pill.noship   { border-color: #fbbf24; color: #fbbf24; }
+      #s5 .pill .num { font-size: 40px; font-weight: 700; }
+      #s5 .pill .tag { font-size: 18px; letter-spacing: 0.18em; text-transform: uppercase; }
+
+      /* ======== SCENE 6 · OUTRO (FINAL) ======== */
+      #s6 { align-items: center; justify-content: center; padding: 140px; }
+      #s6 .glyph {
+        font-size: 92px; color: #06b6d4; font-weight: 700; letter-spacing: -0.01em;
+        text-align: center; line-height: 1.15;
+      }
+      #s6 .glyph .caret {
+        display: inline-block; background: #fbbf24; width: 24px; height: 80px;
+        transform: translateY(12px); margin-left: 8px;
+      }
+      #s6 .subline {
+        font-size: 28px; color: #a1a1aa; letter-spacing: 0.14em;
+        margin-top: 44px;
+      }
+      #s6 .subline .sep { color: #7c3aed; margin: 0 12px; }
+      #s6 .corner {
+        position: absolute; bottom: 60px; left: 80px;
+        font-size: 16px; color: #71717a; letter-spacing: 0.22em; text-transform: uppercase;
+      }
+      #s6 .corner .license {
+        position: absolute; bottom: 60px; right: 80px; left: auto;
+      }
+      #s6 .final-black {
+        position: absolute; inset: 0; background: #0a0a0a; opacity: 0; z-index: 10;
+      }
+
+      /* ======== CAPTIONS ======== */
+      #captions {
+        position: absolute; left: 0; right: 0; bottom: 110px;
+        display: flex; justify-content: center; pointer-events: none; z-index: 9;
+      }
+      #captions .cap {
+        position: absolute;
+        font-size: 28px; color: #f4f4f5;
+        background: rgba(10,10,10,0.75);
+        border-left: 3px solid #06b6d4;
+        padding: 14px 26px; max-width: 1400px;
+        letter-spacing: 0.02em; line-height: 1.35;
+        text-align: center;
+        opacity: 0;
+      }
+
+      /* vignette / grain-ish overlay for H.264 friendliness */
+      .vignette {
+        position: absolute; inset: 0; pointer-events: none; z-index: 8;
+        background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="45"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="bg-radial"></div>
+      <div class="bg-grid"></div>
+
+      <!-- ======== SCENE 1 · COLD OPEN ======== -->
+      <div class="scene" id="s1">
+        <div class="readout">
+          <span>n=<span id="s1-count">0</span></span>
+          <span class="dot"></span>
+          <span>100Q × 3 rounds</span>
+        </div>
+        <div class="eyebrow">USDA FoodData Central</div>
+        <div class="title">
+          <span class="word"><span class="accent">13</span> Skills.</span>
+          <span class="word">One API.</span>
+        </div>
+        <div class="subtitle">drop-in abilities for any agent runtime</div>
+        <div class="chips">
+          <div class="chip">dining-out</div>
+          <div class="chip">low-sugar-snack</div>
+          <div class="chip">recipe-breakdown</div>
+          <div class="chip">ingredient-compliance</div>
+          <div class="chip">micronutrient-lookup</div>
+          <div class="chip">macro-alignment</div>
+          <div class="chip">daily-intake-tally</div>
+          <div class="chip">nutrient-dense-substitute</div>
+          <div class="chip">healthy-swap</div>
+          <div class="chip">label-scanner</div>
+          <div class="chip">product-comparison</div>
+          <div class="chip">cart-optimization</div>
+          <div class="chip">threshold-tracking</div>
+        </div>
+        <div class="rule"></div>
+      </div>
+
+      <!-- ======== SCENE 2 · USE CASES ======== -->
+      <div class="scene" id="s2">
+        <div class="s2-header">Sample queries · answered from real FDC data</div>
+        <div class="grid">
+          <div class="card" id="s2-c1">
+            <div>
+              <div class="glyph">◈</div>
+              <div class="label">dining-out</div>
+            </div>
+            <div class="query">Lowest <span class="highlight">sodium</span> bowl at Chipotle under <span class="highlight">700 kcal</span>?</div>
+          </div>
+          <div class="card" id="s2-c2">
+            <div>
+              <div class="glyph">⬛</div>
+              <div class="label">label-scanner</div>
+            </div>
+            <div class="query">Scan this cereal for <span class="highlight">hypertension</span> red flags.</div>
+          </div>
+          <div class="card" id="s2-c3">
+            <div>
+              <div class="glyph">◐</div>
+              <div class="label">daily-intake-tally</div>
+            </div>
+            <div class="query">Total added <span class="highlight">sugar</span> today?</div>
+          </div>
+          <div class="card" id="s2-c4">
+            <div>
+              <div class="glyph">▦</div>
+              <div class="label">cart-optimization</div>
+            </div>
+            <div class="query">Swap 2 items to stay under <span class="highlight">2000 mg</span> sodium.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== SCENE 3 · WHAT A SKILL IS ======== -->
+      <div class="scene" id="s3">
+        <div class="left">
+          <div class="tree-title">Repo Layout</div>
+          <div class="tree-line" id="s3-t1"><span class="dim">usda-api/</span></div>
+          <div class="tree-line" id="s3-t2"><span class="dim">└── skills/</span></div>
+          <div class="tree-line" id="s3-t3"><span class="dim">    └── usda-fdc-dining-out/</span></div>
+          <div class="tree-line accent" id="s3-t4">        ├── SKILL.md</div>
+          <div class="tree-line" id="s3-t5"><span class="dim">        └── references/</span></div>
+          <div class="tree-line" id="s3-t6"><span class="dim">            └── trajectory.png</span></div>
+        </div>
+        <div class="right">
+          <div class="card" id="s3-card">
+            <div class="card-filename">SKILL.md</div>
+            <div class="card-region" id="s3-r1">
+              <div class="reg-label">name</div>
+              <div class="reg-body">usda-fdc-dining-out</div>
+            </div>
+            <div class="card-region" id="s3-r2">
+              <div class="reg-label">description</div>
+              <div class="reg-body">When a user asks about restaurant / fast-food menu items…</div>
+            </div>
+            <div class="card-region" id="s3-r3">
+              <div class="reg-label">instructions</div>
+              <div class="reg-body">Endpoint · search → detail · rank by sodium, kcal, protein…</div>
+            </div>
+            <div class="card-region" id="s3-r4">
+              <div class="reg-label">examples</div>
+              <div class="reg-body">curl /foods/search · jq .labelNutrients · verify by fdcId</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== SCENE 4 · GRADING LOOP ======== -->
+      <div class="scene" id="s4">
+        <div class="title">Three-role grading · three rounds</div>
+        <div class="diagram">
+          <div class="orbit"></div>
+          <div class="orbit-pulse" id="s4-pulse"></div>
+          <div class="round-label" id="s4-round">Round 1</div>
+          <div class="node answerer" id="s4-n1">
+            <div class="role-num">role 01</div>
+            <div class="role-name">Answerer</div>
+            <div class="role-verb">produces answers</div>
+          </div>
+          <div class="node counter" id="s4-n2">
+            <div class="role-num">role 02</div>
+            <div class="role-name">Counter</div>
+            <div class="role-verb">counts issues</div>
+          </div>
+          <div class="node editor" id="s4-n3">
+            <div class="role-num">role 03</div>
+            <div class="role-name">Editor</div>
+            <div class="role-verb">proposes edits</div>
+          </div>
+          <svg id="s4-arrows" width="820" height="560" style="position:absolute; inset:0; overflow:visible; pointer-events:none;">
+            <defs>
+              <marker id="arrowhead-cyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <polygon points="0 0, 8 4, 0 8" fill="#06b6d4"/>
+              </marker>
+              <marker id="arrowhead-amber" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <polygon points="0 0, 8 4, 0 8" fill="#fbbf24"/>
+              </marker>
+              <marker id="arrowhead-purple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <polygon points="0 0, 8 4, 0 8" fill="#7c3aed"/>
+              </marker>
+            </defs>
+            <!-- Answerer (top center ~410,110) → Counter (bottom-left ~110,450) -->
+            <path id="s4-arr1" d="M 370 180 L 160 410" stroke="#06b6d4" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-cyan)" stroke-dasharray="400" stroke-dashoffset="400" opacity="0"/>
+            <!-- Counter → Editor -->
+            <path id="s4-arr2" d="M 270 490 L 560 490" stroke="#fbbf24" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-amber)" stroke-dasharray="300" stroke-dashoffset="300" opacity="0"/>
+            <!-- Editor → Answerer -->
+            <path id="s4-arr3" d="M 660 410 L 450 180" stroke="#7c3aed" stroke-width="2.5" fill="none" marker-end="url(#arrowhead-purple)" stroke-dasharray="400" stroke-dashoffset="400" opacity="0"/>
+          </svg>
+        </div>
+        <div class="stat-footer"><span class="accent">100</span> held-out questions per skill</div>
+      </div>
+
+      <!-- ======== SCENE 5 · RESULTS ======== -->
+      <div class="scene" id="s5">
+        <div class="caption">Issue count ↓ across rounds</div>
+        <div class="chart-frame">
+          <img src="../../aggregate-trajectories.png" alt="aggregate trajectories" />
+        </div>
+        <div class="pills">
+          <div class="pill clean"   id="s5-p1"><span class="num" id="s5-n1">0</span><span class="tag">shipped · clean</span></div>
+          <div class="pill plateau" id="s5-p2"><span class="num" id="s5-n2">0</span><span class="tag">shipped · plateau</span></div>
+          <div class="pill noship"  id="s5-p3"><span class="num" id="s5-n3">0</span><span class="tag">not shipped</span></div>
+        </div>
+      </div>
+
+      <!-- ======== SCENE 6 · OUTRO ======== -->
+      <div class="scene" id="s6">
+        <div class="glyph">skills/usda-fdc-*/SKILL.md<span class="caret" id="s6-caret"></span></div>
+        <div class="subline">13 abilities<span class="sep">·</span>graded<span class="sep">·</span>shipped<span class="sep">·</span>documented</div>
+        <div class="corner">apps/usda-api</div>
+        <div class="corner license" style="left:auto; right:80px;">MIT · fork · retrain</div>
+        <div class="final-black" id="s6-fade"></div>
+      </div>
+
+      <!-- ======== CAPTIONS LAYER ======== -->
+      <div id="captions"></div>
+
+      <!-- ======== VIGNETTE ======== -->
+      <div class="vignette"></div>
+
+      <!-- ======== AUDIO ======== -->
+      <audio id="vo"
+             data-start="0"
+             data-duration="45"
+             data-track-index="0"
+             src="audio/narration.wav"
+             data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      /* ===== CAPTION PHRASES (word-timed blocks) ===== */
+      const phrases = [
+        { t: 0.04, end: 2.20,  text: "13 skills. One API." },
+        { t: 2.30, end: 7.50,  text: "This repo wraps the USDA FoodData Central nutrition database into drop-in abilities for any agent runtime." },
+        { t: 7.90, end: 11.40, text: "Ask the lowest-sodium bowl at Chipotle under 700 calories." },
+        { t: 11.40, end: 13.90, text: "Scan a cereal box for hypertension red flags." },
+        { t: 13.90, end: 15.20, text: "Tally a day's added sugar." },
+        { t: 15.20, end: 17.90, text: "Swap two items in your cart to stay under a threshold." },
+        { t: 17.90, end: 22.50, text: "Each skill is a single markdown file — a name, a description, instructions, examples." },
+        { t: 22.50, end: 24.20, text: "Your agent loads it like any other skill." },
+        { t: 24.30, end: 25.60, text: "Every one of these was trained." },
+        { t: 25.60, end: 27.40, text: "Three roles. One model answers." },
+        { t: 27.40, end: 28.60, text: "A second counts issues." },
+        { t: 28.60, end: 29.90, text: "A third proposes edits." },
+        { t: 29.90, end: 31.00, text: "Never the same role twice." },
+        { t: 31.00, end: 33.40, text: "Three rounds. 100 held-out questions per skill." },
+        { t: 33.40, end: 34.80, text: "The trajectories converged." },
+        { t: 34.80, end: 35.90, text: "Three skills shipped clean." },
+        { t: 35.90, end: 37.70, text: "Seven plateaued inside tolerance." },
+        { t: 37.70, end: 39.90, text: "Three missed the bar — marked, but still working." },
+        { t: 39.90, end: 41.10, text: "Read the SKILL.md." },
+        { t: 41.10, end: 42.30, text: "Fork it. Retrain it." },
+        { t: 42.30, end: 44.20, text: "It's MIT." }
+      ];
+      const capsLayer = document.getElementById("captions");
+      phrases.forEach((p, i) => {
+        const el = document.createElement("div");
+        el.className = "cap";
+        el.textContent = p.text;
+        capsLayer.appendChild(el);
+        tl.set(el, { opacity: 0, visibility: "hidden" }, 0);
+        tl.set(el, { visibility: "visible" }, p.t - 0.05);
+        tl.to(el, { opacity: 1, duration: 0.25, ease: "power2.out" }, p.t);
+        tl.to(el, { opacity: 0, duration: 0.25, ease: "power2.in"  }, p.end);
+        tl.set(el, { opacity: 0, visibility: "hidden" }, p.end + 0.26);
+      });
+
+      /* ===== BACKGROUND AMBIENT (grid drift) ===== */
+      tl.fromTo(".bg-grid",
+        { backgroundPosition: "0px 0px" },
+        { backgroundPosition: "160px 160px", duration: 45, ease: "none" }, 0);
+
+      /* ===== SCENE FADES (crossfade 0.5s) ===== */
+      const scenes = [
+        { id: "#s1", in: 0.0,  out: 7.8  },
+        { id: "#s2", in: 7.5,  out: 17.8 },
+        { id: "#s3", in: 17.5, out: 24.3 },
+        { id: "#s4", in: 24.0, out: 33.5 },
+        { id: "#s5", in: 33.2, out: 39.8 },
+        { id: "#s6", in: 39.5, out: 45.0 }
+      ];
+      scenes.forEach(s => {
+        tl.to(s.id, { opacity: 1, duration: 0.6, ease: "sine.inOut" }, s.in);
+        if (s.id !== "#s6") {
+          tl.to(s.id, { opacity: 0, duration: 0.6, ease: "sine.inOut" }, s.out - 0.3);
+        }
+      });
+
+      /* ===== SCENE 1 · COLD OPEN ===== */
+      tl.from("#s1 .eyebrow",  { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.3);
+      tl.from("#s1 .title .word", { y: 60, opacity: 0, duration: 0.7, ease: "expo.out", stagger: 0.12 }, 0.5);
+      tl.from("#s1 .subtitle", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 1.0);
+      tl.from("#s1 .chip", { y: 24, opacity: 0, duration: 0.5, ease: "power3.out", stagger: 0.04 }, 1.3);
+      // counter 0 → 13
+      const countObj = { n: 0 };
+      tl.to(countObj, {
+        n: 13, duration: 1.8, ease: "sine.inOut",
+        onUpdate: () => { document.getElementById("s1-count").textContent = Math.round(countObj.n); }
+      }, 1.0);
+      tl.from("#s1 .readout", { opacity: 0, duration: 0.4 }, 0.9);
+      tl.fromTo("#s1 .rule",
+        { scaleX: 0, transformOrigin: "center center" },
+        { scaleX: 1, duration: 1.2, ease: "power3.out" }, 0.6);
+
+      /* ===== SCENE 2 · USE CASES ===== */
+      tl.from("#s2 .s2-header", { x: -20, opacity: 0, duration: 0.5, ease: "power2.out" }, 7.9);
+      tl.from("#s2 .card", {
+        y: 40, opacity: 0, duration: 0.6, ease: "power3.out", stagger: 0.08
+      }, 8.0);
+      // highlight schedule per narration beat
+      const cardHighlights = [
+        { id: "#s2-c1", in: 8.0,  out: 11.4 },
+        { id: "#s2-c2", in: 11.5, out: 13.9 },
+        { id: "#s2-c3", in: 13.9, out: 15.2 },
+        { id: "#s2-c4", in: 15.3, out: 17.8 }
+      ];
+      cardHighlights.forEach(h => {
+        tl.to(h.id, {
+          opacity: 1, scale: 1.02, duration: 0.35, ease: "power2.out",
+          onStart: () => document.querySelector(h.id).classList.add("active"),
+          onReverseComplete: () => document.querySelector(h.id).classList.remove("active")
+        }, h.in);
+        tl.to(h.id, {
+          opacity: 0.45, scale: 1.0, duration: 0.35, ease: "power2.in",
+          onStart: () => document.querySelector(h.id).classList.remove("active")
+        }, h.out);
+      });
+
+      /* ===== SCENE 3 · WHAT A SKILL IS ===== */
+      tl.from("#s3 .tree-title", { x: -20, opacity: 0, duration: 0.45, ease: "power2.out" }, 17.9);
+      tl.from("#s3 .tree-line", {
+        x: -30, opacity: 0, duration: 0.35, ease: "power1.inOut", stagger: 0.07
+      }, 18.0);
+      tl.fromTo("#s3-card",
+        { clipPath: "inset(0 0 100% 0)", opacity: 0 },
+        { clipPath: "inset(0 0 0% 0)",    opacity: 1, duration: 0.8, ease: "power3.out" }, 18.6);
+      // card regions — reveal as narration names each ("a name, a description, instructions, examples")
+      // narration mentions at ~19.85, 20.24, 20.95, 21.72
+      tl.from("#s3-r1", { opacity: 0, x: -16, duration: 0.35, ease: "power2.out" }, 19.85);
+      tl.from("#s3-r2", { opacity: 0, x: -16, duration: 0.35, ease: "power2.out" }, 20.25);
+      tl.from("#s3-r3", { opacity: 0, x: -16, duration: 0.35, ease: "power2.out" }, 20.95);
+      tl.from("#s3-r4", { opacity: 0, x: -16, duration: 0.35, ease: "power2.out" }, 21.75);
+
+      /* ===== SCENE 4 · GRADING LOOP ===== */
+      tl.from("#s4 .title", { y: -10, opacity: 0, duration: 0.45, ease: "power2.out" }, 24.3);
+      // nodes appear one by one — "three roles" at 25.56
+      tl.from("#s4-n1", { scale: 0.5, opacity: 0, duration: 0.5, ease: "power3.out" }, 25.6);
+      tl.from("#s4-n2", { scale: 0.5, opacity: 0, duration: 0.5, ease: "power3.out" }, 27.4);
+      tl.from("#s4-n3", { scale: 0.5, opacity: 0, duration: 0.5, ease: "power3.out" }, 28.6);
+      // arrows draw in — combine opacity + strokeDashoffset into a single tween
+      tl.fromTo("#s4-arr1",
+        { opacity: 0, strokeDashoffset: 400 },
+        { opacity: 1, strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 26.0);
+      tl.fromTo("#s4-arr2",
+        { opacity: 0, strokeDashoffset: 300 },
+        { opacity: 1, strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 27.9);
+      tl.fromTo("#s4-arr3",
+        { opacity: 0, strokeDashoffset: 400 },
+        { opacity: 1, strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 29.0);
+      // orbit ring + pulse (round indicator)
+      tl.from("#s4 .orbit", { opacity: 0, duration: 0.6, ease: "sine.inOut" }, 29.8);
+      tl.from("#s4 .round-label", { opacity: 0, y: 10, duration: 0.4 }, 30.0);
+      // pulse orbits along the dashed ellipse — compute positions
+      // place pulse at 12 points around the ellipse (center 390,270; rx=390, ry=260, but orbit is at 820x560 ellipse - actual half is 390,260)
+      // simpler: use motionPath-less approach — animate x,y
+      const cx = 390, cy = 260, rx = 390, ry = 260;
+      const steps = 36;
+      const orbitTl = gsap.timeline({ paused: false });
+      for (let i = 1; i <= steps; i++) {
+        const a = (i / steps) * Math.PI * 2 - Math.PI / 2;
+        orbitTl.to("#s4-pulse", {
+          left: (cx + rx * Math.cos(a)) + "px",
+          top:  (cy + ry * Math.sin(a)) + "px",
+          duration: 3.5 / steps, ease: "none"
+        });
+      }
+      // embed orbit as a child of main timeline starting at 29.8
+      tl.add(orbitTl, 29.8);
+      // round counter
+      const roundEl = document.getElementById("s4-round");
+      tl.call(() => roundEl.textContent = "Round 1", [], 29.8);
+      tl.call(() => roundEl.textContent = "Round 2", [], 31.2);
+      tl.call(() => roundEl.textContent = "Round 3", [], 32.4);
+      tl.from("#s4 .stat-footer", { opacity: 0, y: 10, duration: 0.5, ease: "power2.out" }, 32.0);
+
+      /* ===== SCENE 5 · RESULTS ===== */
+      tl.from("#s5 .caption",    { y: -14, opacity: 0, duration: 0.5, ease: "power2.out" }, 33.5);
+      tl.fromTo("#s5 .chart-frame",
+        { scale: 1.08, opacity: 0 },
+        { scale: 1.0,  opacity: 1, duration: 1.0, ease: "expo.out" }, 33.6);
+      // pills arrive per narration:
+      // "three skills shipped clean" 34.72, "seven plateaued" 35.88-36.60, "three missed" 37.76
+      tl.from("#s5-p1", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 34.75);
+      tl.from("#s5-p2", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 35.90);
+      tl.from("#s5-p3", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 37.80);
+      // counter tweens for pill numbers
+      const p1n = { n: 0 }, p2n = { n: 0 }, p3n = { n: 0 };
+      tl.to(p1n, { n: 3, duration: 0.5, ease: "sine.inOut",
+        onUpdate: () => document.getElementById("s5-n1").textContent = Math.round(p1n.n) }, 34.75);
+      tl.to(p2n, { n: 7, duration: 0.7, ease: "sine.inOut",
+        onUpdate: () => document.getElementById("s5-n2").textContent = Math.round(p2n.n) }, 35.90);
+      tl.to(p3n, { n: 3, duration: 0.5, ease: "sine.inOut",
+        onUpdate: () => document.getElementById("s5-n3").textContent = Math.round(p3n.n) }, 37.80);
+
+      /* ===== SCENE 6 · OUTRO (final — exits allowed) ===== */
+      tl.fromTo("#s6 .glyph",
+        { scale: 0.7, opacity: 0 },
+        { scale: 1.0, opacity: 1, duration: 0.8, ease: "power3.out" }, 39.9);
+      // caret blink — deterministic steps
+      const caret = document.getElementById("s6-caret");
+      tl.fromTo(caret, { opacity: 1 }, { opacity: 0, duration: 0.01 }, 40.5);
+      tl.fromTo(caret, { opacity: 0 }, { opacity: 1, duration: 0.01 }, 40.9);
+      tl.fromTo(caret, { opacity: 1 }, { opacity: 0, duration: 0.01 }, 41.3);
+      tl.fromTo(caret, { opacity: 0 }, { opacity: 1, duration: 0.01 }, 41.7);
+      tl.fromTo(caret, { opacity: 1 }, { opacity: 0, duration: 0.01 }, 42.1);
+      tl.fromTo(caret, { opacity: 0 }, { opacity: 1, duration: 0.01 }, 42.5);
+      tl.from("#s6 .subline", { y: 16, opacity: 0, duration: 0.5, ease: "power2.out" }, 40.3);
+      tl.from("#s6 .corner", { opacity: 0, duration: 0.5, ease: "power1.out", stagger: 0.15 }, 40.6);
+      // final fade to black
+      tl.to("#s6-fade", { opacity: 1, duration: 0.8, ease: "power2.in" }, 44.2);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

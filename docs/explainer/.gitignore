@@ -1,0 +1,6 @@
+audio/
+renders/
+node_modules/
+.hyperframes/
+transcript.json
+meta.json
