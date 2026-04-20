@@ -6,7 +6,7 @@ Each skill was **trained and validated** against 100 held-out questions per abil
 
 ## Watch the 45-second explainer
 
-<video src="<PLACEHOLDER_GITHUB_URL>" controls width="720"></video>
+<video src="https://github.com/user-attachments/assets/01c7cfcb-13dc-44d7-92c9-f557f076e6dd" controls width="720"></video>
 
 _Prefer to read? The full story is below. Source composition: [`docs/explainer/`](docs/explainer/)._
 
